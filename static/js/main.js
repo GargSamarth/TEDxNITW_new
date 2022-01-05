@@ -214,7 +214,7 @@
     $('.nonloop').owlCarousel({
         center: true,
         loop: false,
-        margin: 15,
+        margin: 5,
         autoplay: false,
         rewind: true,
         autoplayHoverPause: false,
@@ -233,7 +233,7 @@
                 item: 5
             },
             960: {
-                items: 4
+                items: 5
             }
         }
     });
@@ -262,7 +262,7 @@
                 item: 5
             },
             960: {
-                items: 4
+                items: 5
             }
         }
     });
