@@ -1,0 +1,1071 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>TEDx NITW</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicon -->
+    <link href = "{% static 'img/favicon.png' %}"  rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href = "{% static 'vendor/bootstrap/css/bootstrap.min.css' %}"  rel="stylesheet">
+    <link href="{% static "vendor/icofont/icofont.min.css" %}" rel="stylesheet">
+    <link href="{% static "vendor/boxicons/css/boxicons.min.css" %}" rel="stylesheet">
+    <link href="{% static "vendor/animate.css/animate.min.css"%}" rel="stylesheet">
+    <link href="{% static "vendor/owl.carousel/assets/owl.carousel.min.css" %}" rel="stylesheet">
+    <link href="{% static "vendor/venobox/venobox.css"%}" rel="stylesheet">
+    <link href="{% static "vendor/aos/aos.css"%}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static "css/style.css"%}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+            <a href="index.html" class="logo mr-auto"><img src="{% static  "img/logo.png" %}" alt="" class="img-fluid"></a>
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li ><a href="{% url 'home' %}">HOME</a></li>
+                    <li><a href="{% url 'speakers' %}">SPEAKERS</a></li>
+                    <li><a  href="{% url 'xperience' %}">XPERIENCE</a></li>
+                     <li class="active"><a href="{% url 'about' %}">ABOUT</a></li>
+
+                    {% comment %} <li style="margin-left: 5px; margin-right: 5px; font-size: 20px;"> | </li>
+
+                    <li style="margin-left: 5px; padding: 5px 5px;"><a href="twitter.com/tedxnitw" class="twitter"><i style="font-size: 20px;" class="bx bxl-twitter"></i></a></li>
+                    <li style="padding: 5px 5px;"><a href="https://www.facebook.com/TEDxNITW" class="facebook"><i style="font-size: 20px;" class="bx bxl-facebook"></i></a></li>
+                    <li style="padding: 5px 5px;"><a href="https://www.instagram.com/tedxnitw/?hl=en" class="instagram"><i style="font-size: 20px;" class="bx bxl-instagram"></i></a></li>
+                    <li style="padding: 5px 5px;margin-right: 0px;"><a href="https://www.linkedin.com/company/tedxnitw/" class="linkedin"><i style="font-size: 20px;" class="bx bxl-linkedin"></i></a></li> {% endcomment %}
+                </ul>
+            </nav>
+            <!-- .nav-menu -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+    <div style="margin-top: 50px; background: "black";">
+    </div>
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row">
+                    <div class="col-lg-12 pt-4 pt-lg-0 content mb-3" data-aos="zoom-in" data-aos-delay="100">
+                        <!-- <div class="about-img">
+                            <img src="assets/img/about.jpg" alt="">
+                        </div> -->
+                        <div class="section-title">
+                            <h2>About TEDxNITW</h2>
+                        </div>
+                        <p class="font-italic special-about">
+                            TEDxNITW is the independently organized event operated under the license obtained from TED but is based on guidelines laid down by TED. It is conducted and hosted by NITW. At TEDxNITW, we hope to integrate this to deluge our neighbouring ring with notions
+                            it had never been exposed to before, so as to facilitate dialogue and deliberations.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 content mb-3" data-aos="zoom-in" data-aos-delay="100">
+                        <p class="font-italic special-about">
+                            We comprise a robust team of motivated individuals working in curation, event production, logistics, design, public relations and sponsorships. Along with our annual flagship TEDxNITW event, we also conduct TED Circles, conclaves and cultural events centred
+                            around the TEDx Brand.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 content mb-3" data-aos="zoom-in" data-aos-delay="100">
+                        <p class="font-italic special-about">
+                            Our mission is to revolutionize the way people converse and broadcast ideas by speakers from various walks of life. We aim to inspire, motivate, and above all, instigate conversation which adds to everyday life.
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-12 pt-4 pt-lg-0 content mt-3" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="section-title">
+                            <h2>About TED</h2>
+                        </div>
+                        <p class="font-italic special-about">
+                            In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a
+                            small group. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized
+                            (subject to certain rules and regulations).
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- ======= Previous Talk's ======= -->
+        <section id = "team" class="team1" style="background: black;">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2 style="text-transform: uppercase;" class="mb-4">TEAM</h2>
+                    
+                </div>
+            </div>
+
+            <!-- ---------------------team----------------------------- -->
+
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="owl-carousel nonloop">
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/jovita_curation.png"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Jovita Varghese</h4>
+                                        <span>Co-organizer</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/jovita.varghese/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/jovita-varghese/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/ankith_epr.jpeg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Ankith Suresh</h4>
+                                        <span>Organizer</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/profile.php?id=100001280032973"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/ankithsuresh_/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/ankith-suresh-081b92187/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/shubham_design.jpeg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Shubham Das</h4>
+                                        <span>General Secretory</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/shubham.das.754703"><i class="icofont-facebook"></i></a>
+                                        <a href="https://instagram.com/shubham.das_11"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/shubham-sanjeev-das/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <!-- -----------------Curation------------------------ -->
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <p>CURATION</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="owl-carousel nonloop">
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/rohit_curation.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Rohit Chandrahas</h4>
+                                        <span>Department Head</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/rohit.chandrahas"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/rohitchandrahas/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/rohitchandrahas/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/jovita_curation.png"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Jovita Varghese</h4>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/jovita.varghese/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/jovita-varghese/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/nithya_curation.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Nithya Govindaraju</h4>
+                                        
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/_nithya_2708/"><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/vishak_curation.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Vishak Vaithiyanaathan</h4>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/vishak_07/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/vishak-v-38a1601b2/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/daksha_curation.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Daksha Zawar</h4>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href=""><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/daksha-zawar-396288229"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/manhi_curation.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Manhi Panwar</h4>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/manhi_panwar/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/manhi-panwar-008746204/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/shanvi_curation.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Shanvi Tiwari</h4>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href=""><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/maharshi_curation.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Maharshi Dixit</h4>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/profile.php?id=100008081895766"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/martial_warlock_007"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/maharshi-dixit-470777188"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+
+            <!-- -----------------Design------------------------ -->
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <p>DESIGN</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="owl-carousel nonloop">
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/shubham_design.jpeg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Shubham Das</h4>
+                                        <span>Department Head</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/shubham.das.754703"><i class="icofont-facebook"></i></a>
+                                        <a href="https://instagram.com/shubham.das_11"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/shubham-sanjeev-das/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/gokul_design.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Gokul Manu</h4>
+                                        
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/gokul.manu.98"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/thejournalofaphotographer/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/gokul-manu-673710200"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/srijit_design.jpeg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Srijit Paul</h4>
+                                      
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/srijitpaul.paul"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/srijit_paul_/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/srijit-paul-0b9989220"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/priansh_design.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Priansh pandya </h4>
+                                      
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://instagram.com/the.meow.guy?utm_medium=copy_link"><i class="icofont-instagram"></i></a>
+                                        <a href="https://ae.linkedin.com/in/priansh-pandya-473494227?trk=people-guest_people_search-card"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/sai_design.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Sai Sreeharsha Adavi</h4>
+                                      
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/haarshaa._/"><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/stallone_design.png"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Stallone</h4>
+                                      
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://m.facebook.com/profile.php?ref=bookmarks"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/alfredstallone/"><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- -----------------EPR------------------------ -->
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <p>EPR</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="owl-carousel nonloop">
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/ashika_epr.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Ashika Verma</h4>
+                                        <span>Department Head</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/ashika.verma.58323"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/ashika._verma/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/ashika-verma12/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/ankith_epr.jpeg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Ankith Suresh</h4>
+                                      
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/profile.php?id=100001280032973"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/ankithsuresh_/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/ankith-suresh-081b92187/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/sathvika_epr.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Sathvika Morampudi</h4>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/Sathvika.2112/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/sathvika-morampudi/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/sathesh_epr.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Sathesh Subramaniyan</h4>
+                                        
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/sath.u_/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/sathesh-subramaniyan-376359206/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/jash_epr.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Jash kadu</h4>
+                                      
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/jash_kadu/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/jashkadu/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/sumaiyya_epr.jpeg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Sumaiyya Anwar</h4>
+                                      
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://instagram.com/sumaiyyaanwar26?igshid=9hvbra8e383b"><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <!-- -----------------Operations and Editorials------------------------ -->
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <p>OPERATIONS & EDITORIALS</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="owl-carousel nonloop">
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/praveen_operations.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Praveen Balajji</h4>
+                                        <span>Department Head</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/praveen.balajji"><i class="icofont-facebook"></i></a>
+                                        <a href=""><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/praveen-balajji-b050461b3"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/manjima_operations.jpeg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Manjima Karmakar</h4>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/killer_prey_pray/"><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/fatima_operations.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Fatima Reefat</h4>
+                                        
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/xtoixhion/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/fatima-reefat-145227202"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/pavani_operations.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Pavani Siliveru</h4>
+                                      
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href=""><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/lakshmi_operations.png"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Lakshmi Pragna Kalavacharla</h4>
+                                      
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/k.lakshmipragna"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/lux.pragna"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/lakshmi-pragna-kalavacharla-574b661a3"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/sharan_operations.JPG"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Sharan Sasikumar</h4>
+                                      
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/sharan.pro.33"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/sharan._sasikumar"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/sharansasikumar"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- --------------social media & publicity------------------------ -->
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <p>SOCIAL MEDIA & PUBLICITY</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="owl-carousel nonloop">
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/ashiqa_social.jpeg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Ashiqa Rahman</h4>
+                                        <span>Department Head</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/ashiqa.rahman.1232"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/ashiq.a_/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/ashiqa-rahman-432a47192/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/laxmi_social.jpeg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Laxmi Priya Paila</h4>
+                                        <span></span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/laxmi.priya.75098"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/priya_paila/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/laxmi-priya-paila-879964213"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/shashikanth_social.jpeg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Shashikanth Gambheera Rao</h4>
+                                        
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/shashikanth.gambhir.16"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/gsk_here/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/shashikanth-g/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+
+            <!-- -----------------WEB DEV------------------------ -->
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <p>WEB DEV</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="owl-carousel nonloop">
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/sparshal_web.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Sparshal</h4>
+                                        <span>Department Head</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/sparshal.kothari"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/spor.castic/"><i class="icofont-instagram"></i></a>
+                                        <a href=" https://www.linkedin.com/in/sparshal-kothari-581346175"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/samarth_web.jpeg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Samarth</h4>
+                                        
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/samarth.garg.3344/"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/samarth__garg_/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/samarth-garg-a89511194/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/abitha_web.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Abitha</h4>
+                                      
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/raoabitha/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/abitha-rao-5293401a7/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <!-- -----------------SPONSORSHIP------------------------ -->
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <p>SPONSORSHIP</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="owl-carousel nonloop">
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/tanvi_sponsorship.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Tanvi Shekhar</h4>
+                                        <span>Department Head</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/profile.php?id=100008901305202"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/tanvi_shekhar/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/tanvi-shekhar/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/akshat_sponsorship.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Akshat Rai Laddha</h4>
+                                        <span></span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/akshatrai.laddha"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/akshat_laddha16/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/akshat-rai-laddha-8905a0189"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/venkatesh_sponsorship.png"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Venkatesh Thota</h4>
+                                        
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/venkatesh.thxta"><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/venkatesh.thxta/"><i class="icofont-instagram"></i></a>
+                                        <a href="www.linkedin.com/in/venkateshthxta"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/anjana_sponsorship.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Anjana Tumuluri</h4>
+                                        
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href="https://www.instagram.com/anjanablogs/"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/anjana-tumuluri/"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                <img src="{% static "img/team/satvik_sponsorship.jpg"%}" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Satvik Yandapalli</h4>
+                                        
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href="https://www.facebook.com/satvik.yandapalli.77"><i class="icofont-facebook"></i></a>
+                                        <a href="https://instagram.com/satvik_yandapalli_09?utm_medium=copy_link"><i class="icofont-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/satvik-yandapalli-55b9831a7"><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <!-- End #main -->
+    
+    <!-- ======= Footer ======= -->
+    <footer id="footer" style="background: black;">
+        <div class="footer-top" style="background: black;">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-info">
+                            <h3>TEDx NITW</h3>
+                            <p>
+                                National Institute of Technology <br> Warangal, Telangana<br><br>
+                                <strong>Phone:</strong> +91 987654321<br>
+                                <strong>Email:</strong> someone@someone.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <a href="https://twitter.com/tedxnitw" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="https://www.facebook.com/TEDxNITW" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="https://www.instagram.com/tedxnitw/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/tedxnitw/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home' %}">HOME</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'speakers' %}">SPEAKERS</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'xperience' %}">XPERIENCE</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href=href="{% url 'about' %}">ABOUT</a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <form action="/updateDataApi" method="post" class="email-form" >
+                         {% csrf_token %}
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <input type="submit" value="Subscribe">
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            
+            <div class="copyright">
+                 This independent TEDx event is operated under license from TED.
+                 </br>
+                &copy; Copyright <strong><span> <span style="color: red;">TEDx</span> NITW</span></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+    <div id="snackbar" onload="myFunction()">{{message}}</div>
+
+
+    
+
+</body>
+
+<!-- JS Files -->
+    <script src="{% static "vendor/jquery/jquery.min.js"%}"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js"%}"></script>
+    <script src="{% static "vendor/jquery.easing/jquery.easing.min.js"%}"></script>
+    {% comment %} <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg==" crossorigin="anonymous"></script> {% endcomment %}
+    <script src="{% static "vendor/owl.carousel/owl.carousel.min.js"%}"></script>
+    <script src="{% static "vendor/isotope-layout/isotope.pkgd.min.js"%}"></script>
+    <script src="{% static "vendor/venobox/venobox.min.js"%}"></script>
+    <script src="{% static "vendor/aos/aos.js"%}"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js" charset="utf-8"></script>
+
+<!-- Template Main JS File -->
+    <script src="{% static "js/main.js"%}"></script>
+    
+
+
+</html>

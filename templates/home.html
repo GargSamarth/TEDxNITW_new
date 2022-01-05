@@ -1,0 +1,605 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>TEDx NITW</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicon -->
+    <link href = "{% static 'img/favicon.png' %}"  rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href = "{% static 'vendor/bootstrap/css/bootstrap.min.css' %}"  rel="stylesheet">
+    <link href="{% static "vendor/icofont/icofont.min.css" %}" rel="stylesheet">
+    <link href="{% static "vendor/boxicons/css/boxicons.min.css" %}" rel="stylesheet">
+    <link href="{% static "vendor/animate.css/animate.min.css"%}" rel="stylesheet">
+    <link href="{% static "vendor/owl.carousel/assets/owl.carousel.min.css" %}" rel="stylesheet">
+    <link href="{% static "vendor/venobox/venobox.css"%}" rel="stylesheet">
+    <link href="{% static "vendor/aos/aos.css"%}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static "css/style.css"%}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+            <a href="index.html" class="logo mr-auto"><img src="{% static "img/logo.png"%}" alt="" class="img-fluid"></a>
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="{% url 'home' %}">HOME</a></li>
+                    <li><a href="{% url 'speakers' %}">SPEAKERS</a></li>
+                    <li><a  href="{% url 'xperience' %}">XPERIENCE</a></li>
+                     <li><a href="{% url 'about' %}">ABOUT</a></li>
+                    {% comment %} <li style="margin-left: 5px; margin-right: 5px; font-size: 20px;"> | </li>
+
+                    <li style="margin-left: 5px; padding: 5px 5px;"><a href="twitter.com/tedxnitw" class="twitter"><i style="font-size: 20px;" class="bx bxl-twitter"></i></a></li>
+                    <li style="padding: 5px 5px;"><a href="https://www.facebook.com/TEDxNITW" class="facebook"><i style="font-size: 20px;" class="bx bxl-facebook"></i></a></li>
+                    <li style="padding: 5px 5px;"><a href="https://www.instagram.com/tedxnitw/?hl=en" class="instagram"><i style="font-size: 20px;" class="bx bxl-instagram"></i></a></li>
+                    <li style="padding: 5px 5px;margin-right: 0px;"><a href="https://www.linkedin.com/company/tedxnitw/" class="linkedin"><i style="font-size: 20px;" class="bx bxl-linkedin"></i></a></li> {% endcomment %}
+                </ul>
+            </nav>
+            <!-- .nav-menu -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Head Section ======= -->
+    <section id="hero" class="d-flex align-items-right-">
+        <div class="container position-relative text-center text-lg-right" data-aos="zoom-in" data-aos-delay="100">
+            {% comment %} <div class="p-2 btns">
+                <a href="assets/tickets/index.html" class="btn-book animated fadeInUp scrollto">CLICK TO REGISTER NOW</a>
+            </div> {% endcomment %}
+        </div>
+    </section>
+    
+    <!-- End Head -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row">
+                    <div class="col-lg-12 pt-4 pt-lg-0 content mb-3" data-aos="zoom-in" data-aos-delay="100">
+                        <!-- <div class="about-img">
+                            <img src="assets/img/about.jpg" alt="">
+                        </div> -->
+                        <div class="section-title">
+                            <h2>About TEDx</h2>
+                        </div>
+                        <p class="font-italic special-home">
+                            In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDx[name], where x = independently organized TED event. At our TEDx[name] event, TED Talks video and live speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.
+                        </p>
+                    </div>
+                    
+                </div>
+                {% comment %} <div class="row mt-4">
+                    <div class="col-lg-12 pt-4 pt-lg-0 content mt-3" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="section-title">
+                            <h2>About TED</h2>
+                        </div>
+                        <p class="font-italic">
+                            In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a
+                            small group. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized
+                            (subject to certain rules and regulations).
+                        </p>
+                    </div>
+                </div> {% endcomment %}
+
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- ======= Previous Talk's ======= -->
+        <section class="section-bg prev-talk">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2 style="text-transform: uppercase;" class="mb-4">Previous Events</h2>
+                    <p>TALKS</p>
+                </div>
+            </div>
+
+            <!-- ---------------------1----------------------------- -->
+
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="owl-carousel nonloop">
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/tedx2019/AMBIKA HIRANANDANI.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/tedx2019/SAPTARSHI PRAKASH  1.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/tedx2019/SEEMA TOMAR 1.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/tedx2019/SUDIP GHOSE 1.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    {% comment %} <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/gallery/gallery-5.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/gallery/gallery-6.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/gallery/gallery-7.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/gallery/gallery-8.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div> {% endcomment %}
+                </div>
+            </div>
+
+            <!-- -----------------2------------------------ -->
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <p>CIRCLES</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="owl-carousel nonloop">
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/circles/Nawal Mustafa.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/circles/Designing With Humanity.png"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/circles/Partth Thakur.jpeg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/circles/Resilience.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/circles/Anubha Maneshwar.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    {% comment %} <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/gallery/gallery-6.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/gallery/gallery-7.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/gallery/gallery-8.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div> {% endcomment %}
+                </div>
+            </div>
+
+
+            <!-- -----------------3------------------------ -->
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <p>UNTOLD STORIES</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="owl-carousel nonloop">
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/stories/Kulsum Wahab.gif"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/stories/DIGANGANA SURYAVANSHI.gif"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/stories/ANURAG.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    {% comment %} <div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1599068718080-8fbb90aa6972?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/gallery/gallery-5.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/gallery/gallery-6.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/gallery/gallery-7.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/gallery/gallery-8.jpg"%}" alt="" class="img-fluid">
+                        </div>
+                    </div> {% endcomment %}
+                </div>
+            </div>
+
+        </section>
+        <!-- End Previous Talk's -->
+
+        <!-- ======= Drop a Mail ======= -->
+        <section id="contact" class="contact section-bg" style="background: black;">
+
+            <div class="container" data-aos="fade-up" style="">
+
+                <div class="row mt-5">
+
+                    <div class="col-lg-4">
+                        <div class="squarea">
+                            <h1>Drop Your Mail</h1>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-8 mt-5 mt-lg-0">
+                        <h1 class="heading mb-3">BE THE FIRST TO GET UPDATES ON <span>TEDx</span> NITW</h1>
+
+                        <form action="/updateDataApi" method="post" role="form" class="email-form">
+                            <div class="form-row">
+                             {% csrf_token %}
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+
+                            <!--backend not written
+							<div class="mb-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>-->
+
+                            <div class="text-center d-flex align-content-start"><button type="submit">Submit</button></div>
+                        </form>
+
+                        <h1 class="heading mt-4">THANK YOU
+                            <3 </h1>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Drop a Mail -->
+
+        <!-- ======= Testimoials ======== -->
+
+        {% comment %} <section class="section-bg testimonials">
+
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="owl-carousel test-carousel">
+                    <div class="margin-test">
+                        <div class="gallery-item">
+                            <img src="{% static "img/testimonials/callout1.png"%}" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/testimonials/callout2.png"%}" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/testimonials/callout3.png"%}" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/testimonials/callout4.png"%}" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/testimonials/callout5.png"%}" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/testimonials/callout6.png"%}" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/testimonials/callout7.png"%}" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <img src="{% static "img/testimonials/callout8.png"%}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section> {% endcomment %}
+        <!-- End of testimonals -->
+
+        <!-- ======= Gallery Section ======= -->
+        {% comment %} <section id="gallery" class="gallery" style="background: black;">
+
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Gallery</h2>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="owl-carousel nonloop">
+                    <div>
+                        <div class="gallery-item">
+                            <a href="{% static "img/gallery/gallery-1.jpg"%}" class="venobox" data-gall="gallery-item">
+                                <img src="{% static "img/gallery/gallery-1.jpg"%}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <a href="{% static "img/gallery/gallery-2.jpg"%}" class="venobox" data-gall="gallery-item">
+                                <img src="{% static "img/gallery/gallery-2.jpg"%}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <a href="{% static "img/gallery/gallery-3.jpg"%}" class="venobox" data-gall="gallery-item">
+                                <img src="{% static "img/gallery/gallery-3.jpg"%}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <a href="{% static "img/gallery/gallery-4.jpg"%}" class="venobox" data-gall="gallery-item">
+                                <img src="{% static "img/gallery/gallery-4.jpg"%}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <a href="{% static "img/gallery/gallery-5.jpg"%}" class="venobox" data-gall="gallery-item">
+                                <img src="{% static "img/gallery/gallery-5.jpg"%}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <a href="{% static "img/gallery/gallery-6.jpg"%}" class="venobox" data-gall="gallery-item">
+                                <img src="{% static "img/gallery/gallery-6.jpg"%}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <a href="{% static "img/gallery/gallery-7.jpg"%}" class="venobox" data-gall="gallery-item">
+                                <img src="{% static "img/gallery/gallery-7.jpg"%}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gallery-item">
+                            <a href="{% static "img/gallery/gallery-8.jpg"%}" class="venobox" data-gall="gallery-item">
+                                <img src="{% static "img/gallery/gallery-8.jpg"%}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section> {% endcomment %}
+        <!-- End Gallery Section -->
+
+
+
+        <!-- ======= Sponsors Section ======= -->
+        <section id="Sponsors" class="sponsors">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Sponsors</h2>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="owl-carousel owl-theme sponsors_OWL">
+                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/The-souled-store.png"%}" class="img-fluid" alt=""></h4></div>
+                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/zebronics.png"%}" class="img-fluid" alt=""></h4></div>
+                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/icici.png"%}" class="img-fluid" alt=""></h4></div>
+                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/vgrp.png"%}" class="img-fluid" alt=""></h4></div>
+                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/BritishCouncil.png"%}" class="img-fluid" alt=""></h4></div>
+                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/redfm.jpg"%}" class="img-fluid" alt=""></h4></div>
+
+                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/bmb1.png"%}" class="img-fluid" alt=""></h4></div>
+                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/wisholize.png"%}" class="img-fluid" alt=""></h4></div>
+                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/yes-bank.png"%}" class="img-fluid" alt=""></h4></div>
+                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/phasor.jfif"%}" class="img-fluid" alt=""></h4></div>
+                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/shanmukha.png"%}" class="img-fluid" alt=""></h4></div>
+                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/ola1.png"%}" class="img-fluid" alt=""></h4></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End sponsors Section -->
+
+        <!-- ======= Follow us on ======= -->
+        <section id="contact2" class="fso section-bg" style="background: black;">
+
+            <div class="container" data-aos="fade-up">
+
+                <div class="row mt-5">
+
+                    <div class="col-lg-4">
+                        <div class="square">
+                            <h1>Follow Us On</h1>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-8 mt-5 mt-lg-0" style="color: white;">
+                        <ul style="list-style-type: none;">
+                            <li style="margin-left: 5px; padding: 5px 5px;"><a href="https://twitter.com/tedxnitw" class="twitter"><i class="bx bxl-twitter">		TWITTER</i></a></li>
+                            <li style="padding: 5px 5px;"><a href="https://www.facebook.com/TEDxNITW" class="facebook"><i class="bx bxl-facebook">		FACEBOOK</i></a></li>
+                            <li style="padding: 5px 5px;"><a href="https://www.instagram.com/tedxnitw/?hl=en" class="instagram"><i class="bx bxl-instagram">		INSTAGRAM</i></a></li>
+                            <li style="padding: 5px 5px;margin-right: 0px;"><a href="https://www.linkedin.com/company/tedxnitw/" class="linkedin"><i class="bx bxl-linkedin">		LINKED-IN</i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Follow us on -->
+
+        
+    </main>
+    <!-- End #main -->
+    
+    <!-- ======= Footer ======= -->
+    <footer id="footer" style="background: black;">
+        <div class="footer-top" style="background: black;">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-info">
+                            <h3>TEDx NITW</h3>
+                            <p>
+                                National Institute of Technology <br> Warangal, Telangana<br><br>
+                                <strong>Phone:</strong> +91 987654321<br>
+                                <strong>Email:</strong> someone@someone.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <a href="https://twitter.com/tedxnitw" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="https://www.facebook.com/TEDxNITW" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="https://www.instagram.com/tedxnitw/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/tedxnitw/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home' %}">HOME</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'speakers' %}">SPEAKERS</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'xperience' %}">XPERIENCE</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href=href="{% url 'about' %}">ABOUT</a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <form action="/updateDataApi" method="post" class="email-form" >
+                         {% csrf_token %}
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <input type="submit" value="Subscribe">
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            
+            <div class="copyright">
+                 This independent TEDx event is operated under license from TED.
+                 </br>
+                &copy; Copyright <strong><span> <span style="color: red;">TEDx</span> NITW</span></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+    <div id="snackbar" onload="myFunction()">{{message}}</div>
+
+
+    
+
+</body>
+
+<!-- JS Files -->
+    <script src="{% static "vendor/jquery/jquery.min.js"%}"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js"%}"></script>
+    <script src="{% static "vendor/jquery.easing/jquery.easing.min.js"%}"></script>
+    {% comment %} <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg==" crossorigin="anonymous"></script> {% endcomment %}
+    <script src="{% static "vendor/owl.carousel/owl.carousel.min.js"%}"></script>
+    <script src="{% static "vendor/isotope-layout/isotope.pkgd.min.js"%}"></script>
+    <script src="{% static "vendor/venobox/venobox.min.js"%}"></script>
+    <script src="{% static "vendor/aos/aos.js"%}"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js" charset="utf-8"></script>
+
+<!-- Template Main JS File -->
+    <script src="{% static "js/main.js"%}"></script>
+    
+
+
+</html>

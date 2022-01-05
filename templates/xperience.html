@@ -1,0 +1,353 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>TEDx NITW</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicon -->
+    <link href = "{% static 'img/favicon.png' %}"  rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href = "{% static 'vendor/bootstrap/css/bootstrap.min.css' %}"  rel="stylesheet">
+    <link href="{% static "vendor/icofont/icofont.min.css" %}" rel="stylesheet">
+    <link href="{% static "vendor/boxicons/css/boxicons.min.css" %}" rel="stylesheet">
+    <link href="{% static "vendor/animate.css/animate.min.css"%}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" integrity="sha512-RWhcC19d8A3vE7kpXq6Ze4GcPfGe3DQWuenhXAbcGiZOaqGojLtWwit1eeM9jLGHFv8hnwpX3blJKGjTsf2HxQ==" crossorigin="anonymous" />
+    {% comment %} <link href="{% static "vendor/owl.carousel/owl.carousel.min.css"%}" rel="stylesheet"> {% endcomment %}
+    <link href="{% static "vendor/venobox/venobox.css"%}" rel="stylesheet">
+    <link href="{% static "vendor/aos/aos.css"%}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static "css/style.css"%}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+            <a href="index.html" class="logo mr-auto"><img src="{% static "img/logo.png"%}" alt="" class="img-fluid"></a>
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li ><a href="{% url 'home' %}">HOME</a></li>
+                    <li><a href="{% url 'speakers' %}">SPEAKERS</a></li>
+                    <li class="active"><a href="{% url 'xperience' %}">XPERIENCE</a></li>
+                     <li><a href="{% url 'about' %}">ABOUT</a></li>
+
+
+                    {% comment %} <li style="margin-left: 5px; margin-right: 5px; font-size: 20px;"> | </li>
+
+                    <li style="margin-left: 5px; padding: 5px 5px;"><a href="https://www.twitter.com/tedxnitw" class="twitter"><i style="font-size: 20px;" class="bx bxl-twitter"></i></a></li>
+                    <li style="padding: 5px 5px;"><a href="https://www.facebook.com/TEDxNITW" class="facebook"><i style="font-size: 20px;" class="bx bxl-facebook"></i></a></li>
+                    <li style="padding: 5px 5px;"><a href="https://www.instagram.com/tedxnitw/?hl=en" class="instagram"><i style="font-size: 20px;" class="bx bxl-instagram"></i></a></li>
+                    <li style="padding: 5px 5px;margin-right: 0px;"><a href="https://www.linkedin.com/company/tedxnitw/" class="linkedin"><i style="font-size: 20px;" class="bx bxl-linkedin"></i></a></li> {% endcomment %}
+                </ul>
+            </nav>
+            <!-- .nav-menu -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Head furnishing -->
+    <div class="head-furnish"></div>
+    <!-- End of the head furnishing -->
+
+    <!-- ======= Head Section ======= -->
+    <section id="hero" class="d-flex align-items-right-">
+        <div class="container position-relative text-center text-lg-right" data-aos="zoom-in" data-aos-delay="100">
+            {% comment %} <div class="p-2 btns">
+                <a href="assets/tickets/index.html" class="btn-book animated fadeInUp scrollto">CLICK TO REGISTER NOW</a>
+            </div> {% endcomment %}
+        </div>
+    </section>
+    {% comment %} <section id="xperience-hero" class="d-flex align-items-center">
+        <div class="container position-relative text-center text-lg-right" data-aos="zoom-in" data-aos-delay="100">
+            <div class="row">
+                <div class="mr-auto p-2 col-lg-8">
+                    <h1><span>EXPERIENCE TED<sup>x</sup> NITW</span></h1>
+                </div>
+            </div>
+        </div>
+    </section> {% endcomment %}
+    <!-- End Head -->
+
+    <main id="main">
+
+        <!-- ======= Main Page ======= -->
+        <section id="main-part" class="d-flex">
+            <div class="container">
+                <div class="row" data-aos="fade-right" data-aos-delay="100">
+                    <div class="col-lg-6">
+                        <div class="part-image">
+                            <img src="https://images.unsplash.com/photo-1544509538-ae815ae18e20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="part-text">
+                            <p>
+                                A THRILLING EVENING OF LEARNING GROWTH AND IDEAS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-left" data-aos-delay="100">
+                    <div class="col-lg-6">
+                        <div class="part-image">
+                            <img src="https://images.unsplash.com/flagged/photo-1586105708589-9a2ebcce7aeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="part-image" style="margin-left: 50px;">
+                            <img src="{% static "img/cloud.png"%}" width="600px" height="400px" alt="">
+                            <div class="txt-ver-image">
+                                We view nature through a screen. We are addicted to this stream of simulation available to us with the click of a button. As I spend more time in nature, I'm experiencing a new kind of spirituality. When I'm in nature, I know I am a part of it and part
+                                of something bigger.
+                            </div>
+                        </div>
+                        <div class="part-heading">
+                            <p>Nandita Mukand</p>
+                            <p>OCTOBER 2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <div class="part-image">
+                            <img src="https://images.unsplash.com/photo-1442504028989-ab58b5f29a4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row" data-aos="zoom-out-left" data-aos-delay="200">
+                    <div class="col-lg-6">
+                        <div class="part-image" style="margin-left: 45px;">
+                            <img src="{% static "img/cloud1.png"%}" width="630px" height="400px" alt="">
+                            <div class="txt-ver-image">
+                                How much of you is your brain? Are all your intuition, empathy, beliefs just some part of neural circuitry? Or is there a structureless, non-physical entity called "the mind" that governs us? "Mind-brain divide" answers it all.
+                            </div>
+                        </div>
+                        <div class="part-heading" style="text-align: left; margin-left: 50px;">
+                            <p>Dr. Vipul Rastogi</p>
+                            <p>OCTOBER 2019</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="part-image">
+                            <img src="https://images.unsplash.com/photo-1587502623997-f8a7417849ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-aos="zoom-out-right" data-aos-delay="100">
+                    <div class="col-6">
+                        <div class="part-image">
+                            <img src="https://images.unsplash.com/36/yJl7OB3sSpOdEIpHhZhd_DSC_1929_1.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="part-image" style="margin-left: 50px;">
+                            <img src="{% static "img/cloud.png"%}" width="600px" height="400px" alt="">
+                            <div class="txt-ver-image">
+                                We all have to live the life of an Ikigai. You gotta do what you love, what you are good at, what pays you money, but most importantly you gotta do what the world needs right now.
+                            </div>
+                        </div>
+                        <div class="part-heading">
+                            <p>Mani Vajipey</p>
+                            <p>OCTOBER 2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-aos="zoom-out-right" data-aos-delay="100">
+                    <div class="col-lg-6">
+                        <div class="part-text">
+                            <p>
+                                A THRILLING EVENING OF LEARNING GROWTH AND IDEAS
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="part-image">
+                            <img src="https://images.unsplash.com/photo-1607097582493-a35a6656c78d?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-aos="zoom-out-right" data-aos-delay="100">
+                    <div class="col-6">
+                        <div class="part-image">
+                            <img src="https://images.unsplash.com/36/yJl7OB3sSpOdEIpHhZhd_DSC_1929_1.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="part-image">
+                            <img src="https://images.unsplash.com/photo-1607170039932-6861e26a6bb4?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" data-aos="fade-left" data-aos-delay="100">
+                    <div class="col-lg-6">
+                        <div class="part-image">
+                            <img src="https://images.unsplash.com/flagged/photo-1586105708589-9a2ebcce7aeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="part-image" style="margin-left: 50px;">
+                            <img src="{% static "img/cloud.png"%}" width="600px" height="400px" alt="">
+                            <div class="txt-ver-image">
+                                Every decision either leads you to life or death. If your heart is at the right place and you have an objective in your life, you will make the right decisions.
+                            </div>
+                        </div>
+                        <div class="part-heading">
+                            <p>Nag Ashwin</p>
+                            <p>OCTOBER 2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <div class="part-image">
+                            <img src="https://images.unsplash.com/photo-1442504028989-ab58b5f29a4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row" data-aos="zoom-out-left" data-aos-delay="200">
+                    <div class="col-lg-6">
+                        <div class="part-image" style="margin-left: 45px;">
+                            <img src="{% static "img/cloud1.png"%}" width="630px" height="400px" alt="">
+                            <div class="txt-ver-image">
+                                We all have parallel thought processes running in our heads. When it becomes humongous, trust your intuition and follow it.
+                            </div>
+                        </div>
+                        <div class="part-heading" style="text-align: left; margin-left: 50px;">
+                            <p>Sandeep Verma Reddy</p>
+                            <p>OCTOBER 2019</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="part-image">
+                            <img src="https://images.unsplash.com/photo-1587502623997-f8a7417849ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-aos="zoom-out-right" data-aos-delay="100">
+                    <div class="col-6">
+                        <div class="part-image">
+                            <img src="https://images.unsplash.com/36/yJl7OB3sSpOdEIpHhZhd_DSC_1929_1.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="part-image" style="margin-left: 50px;">
+                            <img src="{% static "img/cloud.png"%}" width="600px" height="400px" alt="">
+                            <div class="txt-ver-image">
+                                God will not allow pain without allowing something new to be born. Welcome the pain.
+                            </div>
+                        </div>
+                        <div class="part-heading">
+                            <p>Dr. Tiny Nair</p>
+                            <p>OCTOBER 2019</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- End of the main page -->
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer" style="background: black;">
+        <div class="footer-top" style="background: black;">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-info">
+                            <h3>TEDx NITW</h3>
+                            <p>
+                                National Institute of Technology <br> Warangal, Telangana<br><br>
+                                <strong>Phone:</strong> +91 987654321<br>
+                                <strong>Email:</strong> someone@someone.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <a href="https://twitter.com/tedxnitw" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="https://www.facebook.com/TEDxNITW" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="https://www.instagram.com/tedxnitw/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/tedxnitw/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home' %}">HOME</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'speakers' %}">SPEAKERS</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'xperience' %}">XPERIENCE</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href=href="{% url 'about' %}">ABOUT</a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <form action="/updateDataApi" method="post" class="email-form" >
+                         {% csrf_token %}
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <input type="submit" value="Subscribe">
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            
+            <div class="copyright">
+                 This independent TEDx event is operated under license from TED.
+                 </br>
+                &copy; Copyright <strong><span> <span style="color: red;">TEDx</span> NITW</span></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+        <!-- End Footer -->
+
+        <div id="preloader"></div>
+        <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+        <!-- JS Files -->
+    <script src="{% static "vendor/jquery/jquery.min.js"%}"></script>
+    <script src="{% static "http://code.jquery.com/jquery-migrate-1.2.1.min.js"%}"></script>
+    <script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js"%}"></script>
+    <script src="{% static "vendor/jquery.easing/jquery.easing.min.js"%}"></script>
+    <script src="{% static "vendor/php-email-form/validate.js"%}"></script>
+    <script src="{% static "vendor/owl.carousel/owl.carousel.min.js"%}"></script>
+    <script src="{% static "vendor/isotope-layout/isotope.pkgd.min.js"%}"></script>
+    <script src="{% static "vendor/venobox/venobox.min.js"%}"></script>
+    <script src="{% static "vendor/aos/aos.js"%}"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js" charset="utf-8"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static "js/main.js"%}"></script>
+
+</body>
+
+</html>
