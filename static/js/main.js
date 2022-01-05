@@ -198,13 +198,13 @@
         margin: 30,
         nav: false,
         responsive: {
-            0: {
+            480: {
                 items: 1
             },
-            600: {
+            678: {
                 items: 2
             },
-            1000: {
+            960: {
                 items: 3
             }
         }

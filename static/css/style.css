@@ -1276,7 +1276,7 @@
     }
     
     .sponsors .gallery-item img {
-        object-fit: contain;
+        object-fit: fill;
         transition: all ease-in-out 0.4s;
         margin-right: 10px;
         width: 400px;
@@ -1285,7 +1285,7 @@
     
     @media (max-width: 768px) {
         .sponsors .gallery-item img {
-            object-fit: cover;
+            object-fit: contain;
             width: 200px;
             height: 150px;
         }
