@@ -37,7 +37,7 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
-            <a href="index.html" class="logo mr-auto"><img src="{% static "img/logo.png"%}" alt="" class="img-fluid"></a>
+            <a href="" class="logo mr-auto"><img src="{% static "img/logo.png"%}" alt="" class="img-fluid"></a>
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
@@ -60,13 +60,25 @@
     <!-- End Header -->
 
     <!-- ======= Head Section ======= -->
-    <section id="hero" class="d-flex align-items-right-">
-        <div class="container position-relative text-center text-lg-right" data-aos="zoom-in" data-aos-delay="100">
+    <!-- <section id="hero" class="d-flex align-items-right-"> -->
+        <!-- <div class="container position-relative text-center text-lg-right" data-aos="zoom-in" data-aos-delay="100">
             {% comment %} <div class="p-2 btns">
                 <a href="assets/tickets/index.html" class="btn-book animated fadeInUp scrollto">CLICK TO REGISTER NOW</a>
             </div> {% endcomment %}
-        </div>
-    </section>
+        </div> -->
+    <!-- </section> -->
+
+    <!--
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ****** If you want to reset it to the older version just comment the video part and uncomment the section with id="hero" ******
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    -->
+
+    <video id="hero" autoplay loop>
+            <source src="{% static "img/ted_intro.webm"%}" type="video/webm">
+    </video>
+
+    
     
     <!-- End Head -->
 
@@ -466,7 +478,6 @@
                         <div class="gallery-item"><h4><img src="{% static "img/sponsors/bewakoof.jpg"%}" class="img-fluid" alt=""></h4></div>
                         <div class="gallery-item"><h4><img src="{% static "img/sponsors/bt.jpg"%}" class="img-fluid" alt=""></h4></div>
                         <div class="gallery-item"><h4><img src="{% static "img/sponsors/emt.png"%}" class="img-fluid" alt=""></h4></div>
-
                         <div class="gallery-item"><h4><img src="{% static "img/sponsors/geo.jpg"%}" class="img-fluid" alt=""></h4></div>
                         <div class="gallery-item"><h4><img src="{% static "img/sponsors/gradeup.jpg"%}" class="img-fluid" alt=""></h4></div>
                         <div class="gallery-item"><h4><img src="{% static "img/sponsors/inshorts.jpeg"%}" class="img-fluid" alt=""></h4></div>

@@ -16,6 +16,7 @@
         color: #fff;
         border: none;
         outline: none;
+        overflow-x: hidden;
     }
     
     a.my_header :hover {
@@ -552,12 +553,22 @@
 --------------------------------------------------------------*/
     
     #hero {
-        width: 100%;
+            /* ########  uncomment it ######### */
+
+        /*width: 100%;
         height: 100vh;
-        background: url("../img/ted_intro.gif") top center;
+        background: url("../img/ted_intro.webm") top center;
+        back
         background-size: cover;
-        position: relative;
+        position: relative;*/
+
+        /* #########  Comment it  ############*/
         padding: 0;
+        position: relative;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
     }
     
     #hero:before {
