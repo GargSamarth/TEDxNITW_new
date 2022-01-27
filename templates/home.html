@@ -42,7 +42,66 @@
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li class="active"><a href="{% url 'home' %}">HOME</a></li>
-                    <li><a href="{% url 'speakers' %}">SPEAKERS</a></li>
+                    <li class="drop-down"><a href="{% url 'speakers' %}"><span>EVENTS</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info5"><span>EDITION 5.0 (2021)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee27">Sonal Devnani</a></li>
+                              <li><a href="{% url 'speakers' %}#zee28">Anjum Moudgil</a></li>
+                            </ul>
+                          </li>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info4"><span>EDITION 4.0 (2020)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee1">Anurag Chauhan</a></li>
+                              <li><a href="{% url 'speakers' %}#zee2">Nawal Mustafa</a></li>
+                              <li><a href="{% url 'speakers' %}#zee3">Kulsum Shadab Wahab</a></li>
+                              <li><a href="{% url 'speakers' %}#zee4">Partth Thakur</a></li>
+                              <li><a href="{% url 'speakers' %}#zee5">Digangana Suryavanshi</a></li>
+                              <li><a href="{% url 'speakers' %}#zee6">Anubha Maneshwar</a></li>
+                            </ul>
+                          </li>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info3"><span>EDITION 3.0 (2019)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee7">Akriti Khatri</a></li>
+                              <li><a href="{% url 'speakers' %}#zee8">Anubha Maneshwar</a></li>
+                              <li><a href="{% url 'speakers' %}#zee9">Dr.Srinivasan Sundarrajan</a></li>
+                              <li><a href="{% url 'speakers' %}#zee10">Pavan Rao</a></li>
+                              <li><a href="{% url 'speakers' %}#zee11">Chitra Vishwanath</a></li>
+                              <li><a href="{% url 'speakers' %}#zee12">Seema Tomar</a></li>
+                              <li><a href="{% url 'speakers' %}#zee13">Saptarshi Prakash</a></li>
+                              <li><a href="{% url 'speakers' %}#zee14">Sudip Ghose</a></li>
+                              <li><a href="{% url 'speakers' %}#zee15">Ambika Hiranandani</a></li>
+                              <li><a href="{% url 'speakers' %}#zee16">Dr. Shannon Olsson</a></li>
+                            </ul>
+                          </li>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info2"><span>EDITION 2.0 (2018)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee17">Manish Mehrotra</a></li>
+                              <li><a href="{% url 'speakers' %}#zee18">Nag Ashwin</a></li>
+                              <li><a href="{% url 'speakers' %}#zee19">Flavia Agnes</a></li>
+                              <li><a href="{% url 'speakers' %}#zee20">Mani Vajipeyajula</a></li>
+                              <li><a href="{% url 'speakers' %}#zee21">Jay Krishnan</a></li>
+                              <li><a href="{% url 'speakers' %}#zee22">Dr. Vipul Rastogi</a></li>
+                              <li><a href="{% url 'speakers' %}#zee23">Manan Gupta</a></li>
+                              <li><a href="{% url 'speakers' %}#zee24">Himanshu Rath</a></li>
+                              <li><a href="{% url 'speakers' %}#zee25">Manvendra Singh Gohil</a></li>
+                              <li><a href="{% url 'speakers' %}#zee26">Dr. Tiny Nair</a></li>
+                            </ul>
+                          </li>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info1"><span>EDITION 1.0 (2017)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee27">Mr. Sandeep Reddy Vanga</a></li>
+                              <li><a href="{% url 'speakers' %}#zee28">Pratap Sriram Sundar</a></li>
+                              <li><a href="{% url 'speakers' %}#zee29">Fl Lt. Shikha Pandey</a></li>
+                              <li><a href="{% url 'speakers' %}#zee30">Ajit Babu</a></li>
+                              <li><a href="{% url 'speakers' %}#zee31">Amrapali Kata</a></li>
+                              <li><a href="{% url 'speakers' %}#zee32">Nandita Mukund</a></li>
+                              <li><a href="{% url 'speakers' %}#zee33">Archana Karry</a></li>
+                              <li><a href="{% url 'speakers' %}#zee34">Partha Pratim Talukdar</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
                     <li><a  href="{% url 'xperience' %}">XPERIENCE</a></li>
                      <li><a href="{% url 'about' %}">ABOUT</a></li>
                     {% comment %} <li style="margin-left: 5px; margin-right: 5px; font-size: 20px;"> | </li>
@@ -450,10 +509,92 @@
         </section> {% endcomment %}
         <!-- End Gallery Section -->
 
+        <!-- ======== Sponsors section =========== -->
+        <section id="Sponsors" class="sponsors">
+
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Sponsors</h2>
+                </div>
+
+                <ul class="honeycomb" lang="es">
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/ac.png"%}">
+                    <div class="honeycomb-cell__title">Asian Cinemas</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/aha.png"%}">
+                    <div class="honeycomb-cell__title">Aha(Video Streaming Platform)</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/airmeet.jpg"%}">
+                    <div class="honeycomb-cell__title">Airmeet</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/bewakoof.jpg"%}">
+                    <div class="honeycomb-cell__title">Bewakoof</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/bt.jpg"%}">
+                    <div class="honeycomb-cell__title">Bombay Trooper</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/emt.png"%}">
+                    <div class="honeycomb-cell__title">Elearn Markets</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/geo.jpg"%}">
+                    <div class="honeycomb-cell__title">Geosmin</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/gradeup.jpg"%}">
+                    <div class="honeycomb-cell__title">Gradeup</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/inshorts.jpeg"%}">
+                    <div class="honeycomb-cell__title">Inshorts</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/prh.jpg"%}">
+                    <div class="honeycomb-cell__title">Penguin Random House India</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/probo.png"%}">
+                    <div class="honeycomb-cell__title">Probo</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/sagez.png"%}">
+                    <div class="honeycomb-cell__title">The Sagez</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/sba.jpg"%}">
+                    <div class="honeycomb-cell__title">Scenes by Avalon</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/stockgro.png"%}">
+                    <div class="honeycomb-cell__title">Stockgro</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/tss.png"%}">
+                    <div class="honeycomb-cell__title">The Souled Store</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/voot.png"%}">
+                    <div class="honeycomb-cell__title">Voot</div>
+                  </li>
+                  <li class="honeycomb-cell">
+                    <img class="honeycomb-cell__image" src="{% static "img/sponsors/zee.jpeg"%}">
+                    <div class="honeycomb-cell__title">ZEE Electronics</div>
+                  </li>
+                  <li class="honeycomb-cell honeycomb__placeholder"></li>
+                </ul>
+            </div>
+        </section>
+
 
 
         <!-- ======= Sponsors Section ======= -->
-        <section id="Sponsors" class="sponsors">
+        <!-- <section id="Sponsors" class="sponsors">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -462,28 +603,12 @@
 
                 <div data-aos="fade-up" data-aos-delay="100">
                     <div class="owl-carousel owl-theme sponsors_OWL">
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/ac.png"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/aha.png"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/airmeet.jpg"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/bewakoof.jpg"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/bt.jpg"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/emt.png"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/geo.jpg"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/gradeup.jpg"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/inshorts.jpeg"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/prh.jpg"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/probo.png"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/sagez.png"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/sba.jpg"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/stockgro.png"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/tss.png"%}" class="img-fluid" alt=""></h4></div>
-                        <div class="gallery-item"><h4><img src="{% static "img/sponsors/voot.png"%}" class="img-fluid" alt=""></h4></div>
                         <div class="gallery-item"><h4><img src="{% static "img/sponsors/zee.jpeg"%}" class="img-fluid" alt=""></h4></div>
                     </div>
                 </div>
 
             </div>
-        </section>
+        </section> -->
         <!-- End sponsors Section -->
 
         <!-- ======= Follow us on ======= -->

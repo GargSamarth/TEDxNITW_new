@@ -44,7 +44,68 @@
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li ><a href="{% url 'home' %}">HOME</a></li>
-                    <li class="active"><a href="{% url 'speakers' %}">SPEAKERS</a></li>
+
+                    <li class="active drop-down"><a href="{% url 'speakers' %}"><span>EVENTS</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info5"><span>EDITION 5.0 (2021)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee27">Sonal Devnani</a></li>
+                              <li><a href="{% url 'speakers' %}#zee28">Anjum Moudgil</a></li>
+                            </ul>
+                          </li>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info4"><span>EDITION 4.0 (2020)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee1">Anurag Chauhan</a></li>
+                              <li><a href="{% url 'speakers' %}#zee2">Nawal Mustafa</a></li>
+                              <li><a href="{% url 'speakers' %}#zee3">Kulsum Shadab Wahab</a></li>
+                              <li><a href="{% url 'speakers' %}#zee4">Partth Thakur</a></li>
+                              <li><a href="{% url 'speakers' %}#zee5">Digangana Suryavanshi</a></li>
+                              <li><a href="{% url 'speakers' %}#zee6">Anubha Maneshwar</a></li>
+                            </ul>
+                          </li>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info3"><span>EDITION 3.0 (2019)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee7">Akriti Khatri</a></li>
+                              <li><a href="{% url 'speakers' %}#zee8">Anubha Maneshwar</a></li>
+                              <li><a href="{% url 'speakers' %}#zee9">Dr.Srinivasan Sundarrajan</a></li>
+                              <li><a href="{% url 'speakers' %}#zee10">Pavan Rao</a></li>
+                              <li><a href="{% url 'speakers' %}#zee11">Chitra Vishwanath</a></li>
+                              <li><a href="{% url 'speakers' %}#zee12">Seema Tomar</a></li>
+                              <li><a href="{% url 'speakers' %}#zee13">Saptarshi Prakash</a></li>
+                              <li><a href="{% url 'speakers' %}#zee14">Sudip Ghose</a></li>
+                              <li><a href="{% url 'speakers' %}#zee15">Ambika Hiranandani</a></li>
+                              <li><a href="{% url 'speakers' %}#zee16">Dr. Shannon Olsson</a></li>
+                            </ul>
+                          </li>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info2"><span>EDITION 2.0 (2018)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee17">Manish Mehrotra</a></li>
+                              <li><a href="{% url 'speakers' %}#zee18">Nag Ashwin</a></li>
+                              <li><a href="{% url 'speakers' %}#zee19">Flavia Agnes</a></li>
+                              <li><a href="{% url 'speakers' %}#zee20">Mani Vajipeyajula</a></li>
+                              <li><a href="{% url 'speakers' %}#zee21">Jay Krishnan</a></li>
+                              <li><a href="{% url 'speakers' %}#zee22">Dr. Vipul Rastogi</a></li>
+                              <li><a href="{% url 'speakers' %}#zee23">Manan Gupta</a></li>
+                              <li><a href="{% url 'speakers' %}#zee24">Himanshu Rath</a></li>
+                              <li><a href="{% url 'speakers' %}#zee25">Manvendra Singh Gohil</a></li>
+                              <li><a href="{% url 'speakers' %}#zee26">Dr. Tiny Nair</a></li>
+                            </ul>
+                          </li>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info1"><span>EDITION 1.0 (2017)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee27">Mr. Sandeep Reddy Vanga</a></li>
+                              <li><a href="{% url 'speakers' %}#zee28">Pratap Sriram Sundar</a></li>
+                              <li><a href="{% url 'speakers' %}#zee29">Fl Lt. Shikha Pandey</a></li>
+                              <li><a href="{% url 'speakers' %}#zee30">Ajit Babu</a></li>
+                              <li><a href="{% url 'speakers' %}#zee31">Amrapali Kata</a></li>
+                              <li><a href="{% url 'speakers' %}#zee32">Nandita Mukund</a></li>
+                              <li><a href="{% url 'speakers' %}#zee33">Archana Karry</a></li>
+                              <li><a href="{% url 'speakers' %}#zee34">Partha Pratim Talukdar</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+
                     <li><a href="{% url 'xperience' %}">XPERIENCE</a></li>
                     <li><a href="{% url 'about' %}">ABOUT</a></li>
 
@@ -61,7 +122,7 @@
     <!-- End of the head furnishing -->
 
 
-    <main id="main">
+    <main id="main" style="background-color: black;">
         <div id="sidenav">
             <a href="#info5" id="ed5">2021</a>
             <a href="#info4" id="ed4">2020</a>
@@ -71,9 +132,11 @@
         </div>
         <div class="time">
             <div id="info5">
-                <h1>EDITION 5.0 (2021)</h1>
+                <div class="section-title text-center">
+                    <h2>EDITION 5.0 (2021)</h2>
+                </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Sonal Devnani</h2>
+                    <h2 id="zee27">Sonal Devnani</h2>
                     <img src="{% static "img\speakers\sonal_dev.jpg"%}" class="poster" alt="">
                     <p class="text">Sonali Devnani is a portrait photographer, a journalist,
                         an independent filmmaker and most importantly a storyteller, aiming
@@ -85,7 +148,7 @@
                         South East Asian Film Festival.</p>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Anjum Moudgil</h2>
+                    <h2 id="zee28">Anjum Moudgil</h2>
                     <img src="{% static "img\speakers\anjum_moud.png"%}" class="poster" alt="">
                     <p class="text">Anjum Moudgil is a professional sport shooter, 
                         Olympian, and Arjuna Awardee, having won several medals in 
@@ -98,9 +161,11 @@
                 </div>
             </div>
             <div id="info4">
-                <h1>EDITION 4.0 (2020)</h1>
+                <div class="section-title mt-5 text-center">
+                    <h2>EDITION 4.0 (2020)</h2>
+                </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Anurag Chauhan</h2>
+                    <h2 id="zee1">Anurag Chauhan</h2>
                     <img src="{% static "img\speakers\anurag_chau.jpg"%}" class="poster" alt="">
                     <p class="text">Anurag Chauhan (@anuragchauhanofficial ) is a 
                         prominent Indian social worker and the founder of the 
@@ -108,7 +173,7 @@
                     <button class="watch" onclick="location.href='https://www.instagram.com/tv/CILTuXcH021/?hl=en'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                <h2>Nawal Mustafa</h2>
+                <h2 id="zee2">Nawal Mustafa</h2>
                     <img src="{% static "img\speakers\nawal_mustaf.jpg"%}" class="poster" alt="">
                     <p class="text">Nawal Mustafa is a doctorial student and a 
                         researcher in clinical neuropsychology. Fascinated by how 
@@ -122,11 +187,8 @@
                         content that resonates with what all of us go through 
                         frequently.</p>
                 </div>
-            </div>
-            <div id="info3">
-                <h1>EDITION 3.0 (2019)</h1>
                 <div class="event" data-aos="fade-right">
-                    <h2>Kulsum Shadab Wahab</h2>
+                    <h2 id="zee3">Kulsum Shadab Wahab</h2>
                     <img src="{% static "img\speakers\kulsum_shadab.png"%}" class="poster" alt=""> 
                     <p class="text">Kulsum Shadab Wahab is a renowned philanthropist. 
                         She’s the founder of Ara Lumiere, an initiative to empower women, 
@@ -140,7 +202,7 @@
                         <button class="watch" onclick="location.href='https://www.instagram.com/tv/CEY4IhNH961/?hl=en'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Partth Thakur</h2>
+                    <h2 id="zee4">Partth Thakur</h2>
                     <img src="{% static "img\speakers\parth_thak.jpg"%}" class="poster" alt=""> 
                     <p class="text">Partth Thakur is the founder of the non-profit 
                         organization, 'The Wishing Factory' which aims at fulfilling 
@@ -155,7 +217,7 @@
                         3000+ Warriors.</p>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Digangana Suryavanshi</h2>
+                    <h2 id="zee5">Digangana Suryavanshi</h2>
                     <img src="{% static "img\speakers\digang_surya.png"%}" class="poster" alt=""> 
                     <p class="text">Digangana Suryavanshi is one of the rare talents 
                         that started acting at the tender age of 7. She started off 
@@ -168,7 +230,7 @@
                         <button class="watch" onclick="location.href='https://www.instagram.com/tv/CCqa7zCHimu/?hl=en'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Anubha Maneshwar</h2>
+                    <h2 id="zee6">Anubha Maneshwar</h2>
                     <img src="{% static "img\speakers\anubha_man.jpg"%}" class="poster" alt="">
                     <p class="text">Anubha Maneshwar is a young entrepreneur- the 
                         founding director of GirlScript Foundation, which is India's 
@@ -187,8 +249,13 @@
                         Under 30 list for the social entrepreneurship category. We're 
                         honoured to have her as a part of our TED Circle conference!</p>
                 </div>
+            </div>
+            <div id="info3">
+                <div class="section-title mt-5 text-center">
+                    <h2>EDITION 3.0 (2019)</h2>
+                </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Akriti Khatri</h2>
+                    <h2 id="zee7">Akriti Khatri</h2>
                     <img src="{% static "img\speakers\akriti_khat.jpg"%}" class="poster" alt="">
                     <p class="text">Akriti Khatri is a detective who began the Venus 
                         Detective Agency, her very own private investigative agency. 
@@ -205,7 +272,7 @@
                         in the art of being good detectives.</p>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Anubha Maneshwar</h2>
+                    <h2 id="zee8">Anubha Maneshwar</h2>
                     <img src="{% static "img\speakers\anu_man.jpg"%}" class="poster" alt="">
                     <p class="text">Anubha Maneshwar is a young entrepreneur and 
                         the Founder and Director of the Girlscript Foundation, 
@@ -225,7 +292,7 @@
                         entrepreneurship category.</p>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Dr.Srinivasan Sundarrajan</h2>
+                    <h2 id="zee9">Dr.Srinivasan Sundarrajan</h2>
                     <img src="{% static "img\speakers\srinivas.jpg"%}" class="poster" alt="">
                     <p class="text">Dr.Srinivasan Sundarrajan is a reputed Aerospace and 
                         Missile Scientist who has worked through all the phases of missile 
@@ -245,7 +312,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/jj_4Yb8ZRO8'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Pavan Rao</h2>
+                    <h2 id="zee10">Pavan Rao</h2>
                     <img src="{% static "img\speakers\pavan_rao.jpg"%}" class="poster" alt="">
                     <p class="text">Pavan Rao's podium clinch at Peter England’s Mr. India 2017 
                         is simply one among the endless accolades he has received through the years. 
@@ -260,7 +327,7 @@
                         and eventually, winning the World Hip Hop Championship.</p>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Chitra Vishwanath</h2>
+                    <h2 id="zee11">Chitra Vishwanath</h2>
                     <img src="{% static "img\speakers\chitra.jpg"%}" class="poster" alt="">
                     <p class="text">Chitra Vishwanath, an architect based in Bangalore is the 
                         principal architect at Biome Environmental Solutions. She studied 
@@ -278,7 +345,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/41tlOqU-6PM'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Seema Tomar</h2>
+                    <h2 id="zee12">Seema Tomar</h2>
                     <img src="{% static "img\speakers\seema.jpg"%}" class="poster" alt="">
                     <p class="text">If breaking stereotypes were a target, Seema Tomar seems 
                         to be hitting the bullseye. Hailing from Johri, a village in Uttar 
@@ -296,7 +363,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/X3TzC-_Nnec'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Saptarshi Prakash</h2>
+                    <h2 id="zee13">Saptarshi Prakash</h2>
                     <img src="{% static "img\speakers\prakash.jpg"%}" class="poster" alt="">
                     <p class="text">The word "problem" means something different for different people. 
                         To one who thoroughly enjoys programming, it's the quest for the right code, 
@@ -314,7 +381,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/kEN75SlNuWc'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Sudip Ghose</h2>
+                    <h2 id="zee14">Sudip Ghose</h2>
                     <img src="{% static "img\speakers\sudip.jpg"%}" class="poster" alt="">
                     <p class="text">Often times, our minds begin to get saturated with thoughts of 
                         upcoming exams, placements, and other responsibilities. The one thing we're 
@@ -333,7 +400,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/QoGz3djHPv0'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Ambika Hiranandani</h2>
+                    <h2 id="zee15">Ambika Hiranandani</h2>
                     <img src="{% static "img\speakers\ambika.png"%}" class="poster" alt="">
                     <p class="text">Ambika Hiranandani is an environmental and animal rights 
                         activist and a lawyer. She is a member of the Maharashtra State Animal 
@@ -347,7 +414,7 @@
                         in the plant-based and cell-based meat, eggs and dairy sector.</p>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Dr. Shannon Olsson</h2>
+                    <h2 id="zee16">Dr. Shannon Olsson</h2>
                     <img src="{% static "img\speakers\shannon.jpg"%}" class="poster" alt="">
                     <p class="text">Dr. Shannon Olsson is a chemical ecologist who is passionate about 
                         understanding the communication between organisms within India's diverse 
@@ -362,9 +429,11 @@
                 </div>
             </div>
             <div id="info2">
-                <h1>EDITION 2.0 (2018)</h1>
+                <div class="section-title mt-5 text-center">
+                    <h2>EDITION 2.0 (2018)</h2>
+                </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Manish Mehrotra</h2>
+                    <h2 id="zee17">Manish Mehrotra</h2>
                     <img src="{% static "img\speakers\manish_meh.jpg"%}" class="poster" alt="">
                     <p class="text">Chef Manish Mehrotra is widely recognised as the 
                         most exciting modern Indian chef in the world. He has managed 
@@ -381,7 +450,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/G_M54S6MthU'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Nag Ashwin</h2>
+                    <h2 id="zee18">Nag Ashwin</h2>
                     <img src="{% static "img\speakers\nag_ashwin.jpg"%}" class="poster" alt="">
                     <p class="text">A unique filmmaking talent to grace the Telugu film 
                         industry in recent times, Nag Ashwin, stands out from the typical 
@@ -398,7 +467,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/GKZrs0aJRnE'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Flavia Agnes</h2>
+                    <h2 id="zee19">Flavia Agnes</h2>
                     <img src="{% static "img\speakers\flavia_agnes.jpg"%}" class="poster" alt="">
                     <p class="text">Flavia Agnes is a noted gender rights lawyer and director of 
                         Majlis, a Mumbai-based organisation that provides legal initiatives for 
@@ -415,7 +484,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/IMJ5jkb2nE4'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Mani Vajipeyajula</h2>
+                    <h2 id="zee20">Mani Vajipeyajula</h2>
                     <img src="{% static "img\speakers\mani_vaji.jpg"%}" class="poster" alt="">
                     <p class="text">During his travels across India, Mani Vajipeyajula was deeply 
                         disturbed by the filth and squalor. This motivated him to build an organization 
@@ -430,7 +499,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/UFGvQsEShq4'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Jay Krishnan</h2>
+                    <h2 id="zee21">Jay Krishnan</h2>
                     <img src="{% static "img\speakers\jay_krish.jpg"%}" class="poster" alt="">
                     <p class="text">Jay Krishnan, former Chief Executive Officer of T-Hub - India’s 
                         largest startup incubator, and now Partner to SRI Capital, is a serial 
@@ -446,7 +515,7 @@
                         in our country.</p>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Dr. Vipul Rastogi</h2>
+                    <h2 id="zee22">Dr. Vipul Rastogi</h2>
                     <img src="{% static "img\speakers\vipul_ras.jpg"%}" class="poster" alt="">
                     <p class="text">Dr. Vipul Rastogi has joined Medanta as a Associate Consultant 
                         in Behavioural Neurology and Psychiatry. Being one of the very few 
@@ -460,7 +529,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/_XsFgz7so9E'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Manan Gupta</h2>
+                    <h2 id="zee23">Manan Gupta</h2>
                     <img src="{% static "img\speakers\manan_gup.jpg"%}" class="poster" alt="">
                     <p class="text">From a very young age, Manan Gupta was fascinated by the 
                         intricacies of music. He had the special ability to play the chords of 
@@ -479,7 +548,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/HMnyKalFmk4'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Himanshu Rath</h2>
+                    <h2 id="zee24">Himanshu Rath</h2>
                     <img src="{% static "img\speakers\himanshu_rath.jpg"%}" class="poster" alt="">
                     <p class="text">With an aim to provide a life of dignity to the elderly, 
                         Himanshu Rath set up the Agewell Foundation in 1999, to support and 
@@ -494,7 +563,7 @@
                         Special Consultative Status.</p>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Manvendra Singh Gohil</h2>
+                    <h2 id="zee25">Manvendra Singh Gohil</h2>
                     <img src="{% static "img\speakers\singh_gohil.jpg"%}" class="poster" alt="">
                     <p class="text">When Manvendra Singh Gohil, the first openly gay prince of India, 
                         came out to his family more than a decade ago, it resulted in his mother 
@@ -509,7 +578,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/Vn5BGK4rQ7E'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Dr. Tiny Nair</h2>
+                    <h2 id="zee26">Dr. Tiny Nair</h2>
                     <img src="{% static "img\speakers\tiny_nair.jpg"%}" class="poster" alt="">
                     <p class="text">Dr. Tiny Nair is an experienced Cardiologist in Trivandrum, 
                         who has been working with the PRS Hospital since January 1990. Not only 
@@ -525,9 +594,11 @@
                 </div>
             </div>
             <div id="info1">
-                <h1>EDITION 1.0 (2017)</h1>
+                <div class="section-title mt-5 text-center">
+                    <h2>EDITION 1.0 (2017)</h2>
+                </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Mr. Sandeep Reddy Vanga</h2>
+                    <h2 id="zee27">Mr. Sandeep Reddy Vanga</h2>
                     <img src="{% static "img\speakers\sandeep_vanga.jpg"%}" class="poster" alt="">
                     <p class="text">The next man we're presenting needs next to no 
                         introduction in this part of the world. With his debut direction for 
@@ -537,7 +608,7 @@
                         <button class="watch" onclick="location.href='https://youtu.be/sccHlNsyv-Y'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Pratap Sriram Sundar</h2>
+                    <h2 id="zee28">Pratap Sriram Sundar</h2>
                     <img src="{% static "img\speakers\pratap_sundar.jpg"%}" class="poster" alt="">
                     <p class="text">Just when you thought we were done, we are here to show 
                         you that we aren’t. TEDxNITW presents Pratap Sriram Sundar, a man 
@@ -546,7 +617,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/ETykzhrEZu0'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Fl Lt. Shikha Pandey</h2>
+                    <h2 id="zee29">Fl Lt. Shikha Pandey</h2>
                     <img src="{% static "img\speakers\shikha_pand.jpg"%}" class="poster" alt="">
                     <p class="text">In a society where gender equality is steadily 
                         gaining importance, Fl Lt. Shikha Pandey made the entire nation 
@@ -554,7 +625,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/uj9z59ZmYpc'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Ajit Babu</h2>
+                    <h2 id="zee30">Ajit Babu</h2>
                     <img src="{% static "img\speakers\ajit_babu.jpg"%}" class="poster" alt="">
                     <p class="text">Ajit Babu is the CEO of 'Karwahn Concepts'. 
                         From wanting to do something for earthquake victims, 
@@ -563,20 +634,20 @@
                     <button class="watch" onclick="location.href='https://youtu.be/FSv8IQXO8Hs'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Amrapali Kata</h2>
+                    <h2 id="zee31">Amrapali Kata</h2>
                     <img src="{% static "img\speakers\amra_kata.jpg"%}" class="poster" alt="">
                     <p class="text">Our own Warangal-based district collector, an IAS officer, 
                         tells you about technology and governance.</p>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Nandita Mukund</h2>
+                    <h2 id="zee32">Nandita Mukund</h2>
                     <img src="{% static "img\speakers\nand_muku.jpg"%}" class="poster" alt="">
                     <p class="text">This Singapore-based contemporary artist tells you why nature 
                         and art are important disciplines that bind together in her art.</p>
                     <button class="watch" onclick="location.href='https://youtu.be/7J9cQagTQ8s'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Archana Karry</h2>
+                    <h2 id="zee33">Archana Karry</h2>
                     <img src="{% static "img\speakers\archana_karry.jpg"%}" class="poster" alt="">
                     <p class="text">If we don’t expand our domain of interests within our 
                         lifetime, have we really lived? Archana Karry tells us 
@@ -584,7 +655,7 @@
                     <button class="watch" onclick="location.href='https://youtu.be/RadiZJQck-w'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
-                    <h2>Partha Pratim Talukdar</h2>
+                    <h2 id="zee34">Partha Pratim Talukdar</h2>
                     <img src="{% static "img\speakers\partha_pratim.jpg"%}" class="poster" alt="">
                     <p class="text">What better way to introduce a speaker in a technical 
                         institute if not with a speaker from this domain.</p>

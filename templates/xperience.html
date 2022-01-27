@@ -43,7 +43,66 @@
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li ><a href="{% url 'home' %}">HOME</a></li>
-                    <li><a href="{% url 'speakers' %}">SPEAKERS</a></li>
+                    <li class="drop-down"><a href="{% url 'speakers' %}"><span>EVENTS</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info5"><span>EDITION 5.0 (2021)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee27">Sonal Devnani</a></li>
+                              <li><a href="{% url 'speakers' %}#zee28">Anjum Moudgil</a></li>
+                            </ul>
+                          </li>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info4"><span>EDITION 4.0 (2020)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee1">Anurag Chauhan</a></li>
+                              <li><a href="{% url 'speakers' %}#zee2">Nawal Mustafa</a></li>
+                              <li><a href="{% url 'speakers' %}#zee3">Kulsum Shadab Wahab</a></li>
+                              <li><a href="{% url 'speakers' %}#zee4">Partth Thakur</a></li>
+                              <li><a href="{% url 'speakers' %}#zee5">Digangana Suryavanshi</a></li>
+                              <li><a href="{% url 'speakers' %}#zee6">Anubha Maneshwar</a></li>
+                            </ul>
+                          </li>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info3"><span>EDITION 3.0 (2019)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee7">Akriti Khatri</a></li>
+                              <li><a href="{% url 'speakers' %}#zee8">Anubha Maneshwar</a></li>
+                              <li><a href="{% url 'speakers' %}#zee9">Dr.Srinivasan Sundarrajan</a></li>
+                              <li><a href="{% url 'speakers' %}#zee10">Pavan Rao</a></li>
+                              <li><a href="{% url 'speakers' %}#zee11">Chitra Vishwanath</a></li>
+                              <li><a href="{% url 'speakers' %}#zee12">Seema Tomar</a></li>
+                              <li><a href="{% url 'speakers' %}#zee13">Saptarshi Prakash</a></li>
+                              <li><a href="{% url 'speakers' %}#zee14">Sudip Ghose</a></li>
+                              <li><a href="{% url 'speakers' %}#zee15">Ambika Hiranandani</a></li>
+                              <li><a href="{% url 'speakers' %}#zee16">Dr. Shannon Olsson</a></li>
+                            </ul>
+                          </li>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info2"><span>EDITION 2.0 (2018)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee17">Manish Mehrotra</a></li>
+                              <li><a href="{% url 'speakers' %}#zee18">Nag Ashwin</a></li>
+                              <li><a href="{% url 'speakers' %}#zee19">Flavia Agnes</a></li>
+                              <li><a href="{% url 'speakers' %}#zee20">Mani Vajipeyajula</a></li>
+                              <li><a href="{% url 'speakers' %}#zee21">Jay Krishnan</a></li>
+                              <li><a href="{% url 'speakers' %}#zee22">Dr. Vipul Rastogi</a></li>
+                              <li><a href="{% url 'speakers' %}#zee23">Manan Gupta</a></li>
+                              <li><a href="{% url 'speakers' %}#zee24">Himanshu Rath</a></li>
+                              <li><a href="{% url 'speakers' %}#zee25">Manvendra Singh Gohil</a></li>
+                              <li><a href="{% url 'speakers' %}#zee26">Dr. Tiny Nair</a></li>
+                            </ul>
+                          </li>
+                          <li class="drop-down"><a href="{% url 'speakers' %}#info1"><span>EDITION 1.0 (2017)</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                              <li><a href="{% url 'speakers' %}#zee27">Mr. Sandeep Reddy Vanga</a></li>
+                              <li><a href="{% url 'speakers' %}#zee28">Pratap Sriram Sundar</a></li>
+                              <li><a href="{% url 'speakers' %}#zee29">Fl Lt. Shikha Pandey</a></li>
+                              <li><a href="{% url 'speakers' %}#zee30">Ajit Babu</a></li>
+                              <li><a href="{% url 'speakers' %}#zee31">Amrapali Kata</a></li>
+                              <li><a href="{% url 'speakers' %}#zee32">Nandita Mukund</a></li>
+                              <li><a href="{% url 'speakers' %}#zee33">Archana Karry</a></li>
+                              <li><a href="{% url 'speakers' %}#zee34">Partha Pratim Talukdar</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
                     <li class="active"><a href="{% url 'xperience' %}">XPERIENCE</a></li>
                      <li><a href="{% url 'about' %}">ABOUT</a></li>
 
