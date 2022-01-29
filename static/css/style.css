@@ -1972,98 +1972,52 @@
         /* background-color: black; */
     }
     
-    #ed5 {
-        top: 120px; 
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
-    #ed4 {
-        top: 180px; 
-    }
-     
-    #ed3 {
-        top: 240px;
-    }
-    
-    #ed2 {
-        top: 300px;
-    }
-    
-    #ed1 {
-        top: 360px;
-    }
-
-    #sidenav a{
-        background-color: #e62b1e;
-        list-style: none;
-        position: fixed;
-        left: -60px;
-        transition: all 0.5s;
-        padding: 14px;
-        width: 100px;
-        text-decoration: none;
-        font-size: 20px;
-        color: white;
-        border-radius: 0 10px 10px 0;
-        margin-top: 10%;
-        align-items: left;
-    }
-    
-    #sidenav a:hover {
-        left: 0;
-        opacity: 0.7;
-        align-items: right;
-    }
-    
-    .time {
-        color: white;
-        padding-top: 0px;
-        margin-left: 80px;
-    }
-    
-    .time h1 {
-        color: #e62b1e;
-        padding-top: 10px;
-        margin-left: -80px;
-        text-align: center;
-        padding-bottom: 30px;
-        font-size: 30px;
-    }
-    
-    /*.time h2{
-        padding-top: 10px;
-        padding-bottom: 20px;
-        font-size: 25px;
-    }*/
-    
-    .time p{
-        font-size: 20px;
-        line-height: 30px;
-    }
-    
-    .event {
-        display: inline-block;
-        padding-bottom: 30px;
-    } 
-    
-    .poster {
-        float: left;
+    .speaker_card {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color: black;
+        transition: 0.3s;
         width: 400px;
-        padding-right: 20px;
+        border-radius: 8px;
+        margin: 40px;
     }
     
-    .text {
-        padding-top: 10px;
-        padding-right: 20px;
+    .poster{
+        width: 100%;
+        height: 400px;
+        padding: 0;
+        border-radius: 8px 8px 0px 0px;
     }
-    
+
+    .speaker_card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+      
+    .card_container {
+        padding: 2px 16px;
+        text-align: center;
+    }
+
+    .card_container h4 {
+        padding: 5px;
+    }
+
     .watch {
-        font-size: 15px;
-        padding-top: 20px;
+        margin-top: auto;
+        font-size: 16px;
         background-color: #e62b1e;
         color: white;
         padding: 15px 30px;
-        border-radius: 20px;
+        width: 100%;
         border: none;
+        border-radius: 0px 0px 8px 8px;
     }
     .watch:hover {
         cursor: pointer;
@@ -2071,23 +2025,21 @@
         transition: all 0.3s ease-out;
     }
     
-    
-    
     @media screen and (max-width: 768px) {
     
-        #sidenav a {
-            position: fixed;
-            left: 0;
-            width: 18%;
-            padding: 16px;
-            background-color: #e62b1e;
-            opacity: 0.7;
-            transition: 0.3s;
-            font-size: 16px;
+        .cards {
+            display: relative;
+            align-items: center;
         }
-    
-        .poster {
-            width: 90%;
-            padding-bottom: 20px;
+        
+        .speaker_card {
+            width: 80%;
+            margin-left: 10%;
         }
+
+        .poster{
+            width: 100%;
+            height: 400px;
+        }
+
     }

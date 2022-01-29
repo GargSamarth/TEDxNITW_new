@@ -28,8 +28,7 @@
 
     <!-- Template Main CSS File -->
     <link href="{% static "css/style.css"%}" rel="stylesheet">
-    <link href="{% static "css/search.css"%}" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -49,8 +48,8 @@
                         <ul>
                           <li class="drop-down"><a href="{% url 'speakers' %}#info5"><span>EDITION 5.0 (2021)</span> <i class="bi bi-chevron-right"></i></a>
                             <ul>
-                              <li><a href="{% url 'speakers' %}#zee27">Sonal Devnani</a></li>
-                              <li><a href="{% url 'speakers' %}#zee28">Anjum Moudgil</a></li>
+                              <li><a href="{% url 'speakers' %}#zee35">Sonal Devnani</a></li>
+                              <li><a href="{% url 'speakers' %}#zee36">Anjum Moudgil</a></li>
                             </ul>
                           </li>
                           <li class="drop-down"><a href="{% url 'speakers' %}#info4"><span>EDITION 4.0 (2020)</span> <i class="bi bi-chevron-right"></i></a>
@@ -123,7 +122,435 @@
 
 
     <main id="main" style="background-color: black;">
-        <div id="sidenav">
+        <div id="info5">
+            <div class="section-title text-center">
+                <h2>EDITION 5.0 (2021)</h2>
+            </div>
+            <div class="cards">
+                <div class="speaker_card" id="zee35" data-aos="fade-right">
+                    <img src="{% static "img\speakers\sonal_dev.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Sonali Devnani</b></h4> 
+                        <p>Sonali Devnani is a portrait photographer, a journalist,
+                            an independent filmmaker and most importantly a storyteller, aiming
+                            to bring a change in our society, by capturing and spreading 
+                            stories through her lens.</p> 
+                    </div>
+                </div>
+                <div class="speaker_card" id="zee36" data-aos="fade-right">
+                    <img src="{% static "img\speakers\anjum_moud.png"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Anjum Moudgil</b></h4> 
+                        <p>Anjum Moudgil is a professional sport shooter, 
+                            Olympian, and Arjuna Awardee, having won several medals in 
+                            the World Championship, the South Asian Games and the 
+                            Commonwealth Games.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://www.instagram.com/tv/CTHaVSgnJGO/?hl=en'">Watch it here</button>
+                </div>
+            </div>
+        </div>
+        <div id="info4">
+            <div class="section-title mt-5 text-center">
+                <h2>EDITION 4.0 (2020)</h2>
+            </div>
+            <div class="cards">
+                <div class="speaker_card" id="zee1" data-aos="fade-right">
+                    <img src="{% static "img\speakers\anurag_chau.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Anurag Chauhan</b></h4> 
+                        <p>Anurag Chauhan is a prominent Indian social worker and the founder of the 
+                            non-governmental organization, Humans for Humanity.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://www.instagram.com/tv/CILTuXcH021/?hl=en'">Watch it here</button>
+                </div>
+                <div class="speaker_card"  id="zee2" data-aos="fade-right">
+                    <img src="{% static "img\speakers\nawal_mustaf.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Nawal Mustafa</b></h4> 
+                        <p>Nawal Mustafa is a doctorial student and a 
+                            researcher in clinical neuropsychology. Fascinated by how 
+                            the biology and psychology of the human brain influences 
+                            one's behaviour, Nawal runs @thebraincoach on Instagram to 
+                            stand up to the stigma around mental health.</p> 
+                    </div>
+                </div>
+                <div class="speaker_card" id="zee3" data-aos="fade-right">
+                    <img src="{% static "img\speakers\kulsum_shadab.png"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Kulsum Shadab Wahab</b></h4> 
+                        <p>Kulsum Shadab Wahab is a renowned philanthropist. 
+                            She’s the founder of Ara Lumiere, an initiative to empower women, 
+                            their status and conditions in all spheres of life. She is also 
+                            the Executive Director of Hothur Foundation.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://www.instagram.com/tv/CEY4IhNH961/?hl=en'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee4" data-aos="fade-right">
+                    <img src="{% static "img\speakers\parth_thak.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Partth Thakur</b></h4> 
+                        <p>Partth Thakur is the founder of the non-profit 
+                            organization, 'The Wishing Factory' which aims at fulfilling 
+                            wishes and supporting healthcare of the underprivileged 
+                            Thalassemia Major Patients in India.</p> 
+                    </div>
+                </div>
+                <div class="speaker_card" id="zee5" data-aos="fade-right">
+                    <img src="{% static "img\speakers\digang_surya.png"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Digangana Suryavanshi</b></h4> 
+                        <p>Digangana Suryavanshi is one of the rare talents 
+                            that started acting at the tender age of 7. She started off 
+                            as a child artist in the TV series, 'Kya Haadsa Kya Haqueeqat'. 
+                            After television she decided to venture into films. She's won 
+                            peoples hearts on the silver screen with her bollywood and 
+                            tollywood films.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://www.instagram.com/tv/CCqa7zCHimu/?hl=en'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee6" data-aos="fade-right">
+                    <img src="{% static "img\speakers\anubha_man.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Anubha Maneshwar</b></h4> 
+                        <p>Anubha Maneshwar is a young entrepreneur- the 
+                            founding director of GirlScript Foundation, which is India's 
+                            biggest tech education organisation. Operating in 56 cities 
+                            across India, her company has impacted nearly 30,000 students 
+                            in just 2.5 years of its inception.</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="info3">
+            <div class="section-title mt-5 text-center">
+                <h2>EDITION 3.0 (2019)</h2>
+            </div>
+            <div class="cards">
+                <div class="speaker_card" id="zee7" data-aos="fade-right">
+                    <img src="{% static "img\speakers\akriti_khat.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Akriti Khatri</b></h4> 
+                        <p>Akriti Khatri is a detective who began the Venus 
+                            Detective Agency, her very own private investigative agency. 
+                            Born and raised in Delhi, Akriti completed a Bachelor’s 
+                            degree in Science and an MBA from Delhi University.</p> 
+                    </div>
+                </div>
+                <div class="speaker_card" id="zee8" data-aos="fade-right">
+                    <img src="{% static "img\speakers\anu_man.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Anubha Maneshwar</b></h4> 
+                        <p>Anubha Maneshwar is a young entrepreneur and 
+                            the Founder and Director of the Girlscript Foundation, 
+                            India's biggest tech education organisation, operating in 
+                            56 cities across India and has had an impact on nearly 30,000 
+                            students in just two and a half years since its inception.</p> 
+                    </div>
+                </div>
+                <div class="speaker_card" id="zee9" data-aos="fade-right">
+                    <img src="{% static "img\speakers\srinivas.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Dr.Srinivasan Sundarrajan</b></h4> 
+                        <p>Dr.Srinivasan Sundarrajan is a reputed Aerospace and 
+                            Missile Scientist who has worked through all the phases of missile 
+                            design, production and development. He has worked on prestigious 
+                            missile systems like the Brahmos, Agni, Prithvi, Akash, Nag and 
+                            Thrishul of the Defence Research and Development Organisation.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/jj_4Yb8ZRO8'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee10" data-aos="fade-right">
+                    <img src="{% static "img\speakers\pavan_rao.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Pavan Rao</b></h4> 
+                        <p>Pavan Rao's podium clinch at Peter England’s Mr. India 2017 
+                            is simply one among the endless accolades he has received through the years. 
+                            The Fictitious Group, a dance troupe of which he was a part, was 
+                            awarded the title of “India’s Got Talent Season 3”, after memorable 
+                            wins in dance shows “Boogie Woogie” and “Entertainment Ke liye Kuch 
+                            Bhi Karega”.</p> 
+                    </div>
+                </div>
+                <div class="speaker_card" id="zee11" data-aos="fade-right">
+                    <img src="{% static "img\speakers\chitra.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Chitra Vishwanath</b></h4> 
+                        <p>Chitra Vishwanath, an architect based in Bangalore is the 
+                            principal architect at Biome Environmental Solutions. She studied 
+                            for a diploma in civil engineering from Nigeria and a Bachelor of 
+                            Architecture degree from the CEPT University in Ahmedabad.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/41tlOqU-6PM'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee12" data-aos="fade-right">
+                    <img src="{% static "img\speakers\seema.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Seema Tomar</b></h4> 
+                        <p>Seema Tomar is the only Indian woman to win the Silver Medal for the shotgun 
+                            event, at the 'International Shooting Sports Federation'. She has gone 
+                            forth to secure 6 gold medals and 2 silver medals in various editions of 
+                            the National Shooting Championship's Trap events.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/X3TzC-_Nnec'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee13" data-aos="fade-right">
+                    <img src="{% static "img\speakers\prakash.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Saptarshi Prakash</b></h4> 
+                        <p>A graduate of IIT Madras, Saptarshi Prakash has worked with some incredibly 
+                            well-known startups of India like Housing.com and Zeta India and has been 
+                            a part of crafting consumer experiences for both these products. He is 
+                            currently a Product Design Manager at Swiggy, India’s largest food ordering 
+                            and delivery platform.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/kEN75SlNuWc'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee14" data-aos="fade-right">
+                    <img src="{% static "img\speakers\sudip.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Sudip Ghose</b></h4> 
+                        <p>Touted as a dynamo by colleagues and employees alike, Sudip Ghose is a man 
+                            of relentless energy and always has a positive approach towards his work. 
+                            With over two decades worth of experience, fourteen of which have been spent 
+                            in positions of leadership, he is known for his "never say die" attitude.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/QoGz3djHPv0'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee15" data-aos="fade-right">
+                    <img src="{% static "img\speakers\ambika.png"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Ambika Hiranandani</b></h4> 
+                        <p>Ambika Hiranandani is an environmental and animal rights 
+                            activist and a lawyer. She is a member of the Maharashtra State Animal 
+                            Welfare Board and a member of the Society for Prevention of Cruelty to 
+                            Animals, Mumbai. She has been actively involved in the movement for over 
+                            ten years.</p> 
+                    </div>
+                </div>
+                <div class="speaker_card" id="zee16" data-aos="fade-right">
+                    <img src="{% static "img\speakers\shannon.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Dr. Shannon Olsson</b></h4> 
+                        <p>Dr. Shannon Olsson is a chemical ecologist who is passionate about 
+                            understanding the communication between organisms within India's diverse 
+                            ecosystems. In turn, she is dedicated to bringing people together across 
+                            various sectors of society to better appreciate, sustain, and listen to our 
+                            natural world.</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="info2">
+            <div class="section-title mt-5 text-center">
+                <h2>EDITION 2.0 (2018)</h2>
+            </div>
+            <div class="cards">
+                <div class="speaker_card" id="zee17" data-aos="fade-right">
+                    <img src="{% static "img\speakers\manish_meh.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Chef Manish Mehrotra</b></h4> 
+                        <p>Chef Manish Mehrotra is widely recognised as the 
+                            most exciting modern Indian chef in the world. He has managed 
+                            to leave an imprint in the culinary universe with his innovative, 
+                            artistic and scientific experiments on flavours. He was inspired 
+                            to travel across Asia to train in Pan-Asian cuisine, which resulted 
+                            in his brainchild, the Indian Accent.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/G_M54S6MthU'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee18" data-aos="fade-right">
+                    <img src="{% static "img\speakers\nag_ashwin.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Nag Ashwin</b></h4> 
+                        <p>A unique filmmaking talent to grace the Telugu film 
+                            industry in recent times, Nag Ashwin, stands out from the typical 
+                            cinema. His directorial debut, Yevvade Subramanyam, was well received 
+                            due to it's relatable story line. Mahanati - a biopic of Savitri, is 
+                            his recent hit. It caused waves of sentiment and controversy in it's wake.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/GKZrs0aJRnE'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee19" data-aos="fade-right">
+                    <img src="{% static "img\speakers\flavia_agnes.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Flavia Agnes</b></h4> 
+                        <p>Flavia Agnes is a noted gender rights lawyer and director of 
+                            Majlis, a Mumbai-based organisation that provides legal initiatives for 
+                            women. A strong supporter of legal pluralism and the premise of ‘reforms 
+                            from within’, she has played an important role in reforming Christian Personal 
+                            Laws as well as advancing the rights of Muslim women.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/IMJ5jkb2nE4'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee20" data-aos="fade-right">
+                    <img src="{% static "img\speakers\mani_vaji.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Mani Vajipeyajula</b></h4> 
+                        <p>During his travels across India, Mani Vajipeyajula was deeply 
+                            disturbed by the filth and squalor. This motivated him to build an organization 
+                            that would solve India's waste management challenges through technology and 
+                            business innovations.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/UFGvQsEShq4'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee21" data-aos="fade-right">
+                    <img src="{% static "img\speakers\jay_krish.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Jay Krishnan</b></h4> 
+                        <p>Jay Krishnan, former Chief Executive Officer of T-Hub - India’s 
+                            largest startup incubator, and now Partner to SRI Capital, is a serial 
+                            entrepreneur who had sailed through successes, acquisitions and failures 
+                            in the startup world. </p> 
+                    </div>
+                </div>
+                <div class="speaker_card" id="zee22" data-aos="fade-right">
+                    <img src="{% static "img\speakers\vipul_ras.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Dr. Vipul Rastogi</b></h4> 
+                        <p>Dr. Vipul Rastogi has joined Medanta as a Associate Consultant 
+                            in Behavioural Neurology and Psychiatry. Being one of the very few 
+                            psychiatrists in India who has had formal training in Neurology, he is 
+                            sought after for his special expertise in providing holistic treatment 
+                            of Psychiatric Disorders and alongside medications for his patients.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/_XsFgz7so9E'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee23" data-aos="fade-right">
+                    <img src="{% static "img\speakers\manan_gup.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Manan Gupta</b></h4> 
+                        <p>From a very young age, Manan Gupta was fascinated by the 
+                            intricacies of music. He had the special ability to play the chords of 
+                            any symphony, just by listening. His unique style of playing the guitar, 
+                            called the fingerstyle, inspired by Andy McKee's Drifting, is definitely 
+                            a treat for the ears.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/HMnyKalFmk4'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee24" data-aos="fade-right">
+                    <img src="{% static "img\speakers\himanshu_rath.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Himanshu Rath</b></h4> 
+                        <p>With an aim to provide a life of dignity to the elderly, 
+                            Himanshu Rath set up the Agewell Foundation in 1999, to support and 
+                            empower older persons who have been ill-treated or abandoned by their 
+                            families, provide a friendly and welcoming environment for them, change 
+                            the social perception about them and enable them to regain their self-confidence. </p> 
+                    </div>
+                </div>
+                <div class="speaker_card" id="zee25" data-aos="fade-right">
+                    <img src="{% static "img\speakers\singh_gohil.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Manvendra Singh Gohil</b></h4> 
+                        <p>Manvendra Singh Gohil set up the Lakshya Trust, a charity for LGBT people in 
+                            his conservative home state, made an appearance on the Oprah Winfrey Show, 
+                            and has been using his high status to help the LGBT community.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/Vn5BGK4rQ7E'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee26" data-aos="fade-right">
+                    <img src="{% static "img\speakers\tiny_nair.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Dr. Tiny Nair</b></h4> 
+                        <p>Dr. Tiny Nair is an experienced Cardiologist in Trivandrum, 
+                            who has been working with the PRS Hospital since January 1990. Not only 
+                            is he immensely accomplished in his field, but he  also has a flair for 
+                            storytelling. With 51k followers, he is also big on Quora, having been 
+                            voted Top Writer 2018.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/4doHokOFStM'">Watch it here</button>
+                </div>
+            </div>
+        </div>
+        <div id="info1">
+            <div class="section-title mt-5 text-center">
+                <h2>EDITION 1.0 (2017)</h2>
+            </div>
+            <div class="cards">
+                <div class="speaker_card" id="zee27" data-aos="fade-right">
+                    <img src="{% static "img\speakers\sandeep_vanga.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Mr. Sandeep Reddy Vanga</b></h4> 
+                        <p>The next man we're presenting needs next to no 
+                            introduction in this part of the world. With his debut direction for 
+                            Arjun Reddy, a film so bold, it shook the censorship board before it 
+                            finally got approval. We present to you, one last speaker. Mr. Sandeep 
+                            Reddy Vanga; a man that innocuously breaks the mould to perfection.</p> 
+                    </div>
+                </div>
+                <div class="speaker_card" id="zee28" data-aos="fade-right">
+                    <img src="{% static "img\speakers\pratap_sundar.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Pratap Sriram Sundar</b></h4> 
+                        <p>Just when you thought we were done, we are here to show 
+                            you that we aren’t. TEDxNITW presents Pratap Sriram Sundar, a man 
+                            who has immense experience in areas of technology and management. 
+                            He is filled with ideas that truly break the mould.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/ETykzhrEZu0'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee29" data-aos="fade-right">
+                    <img src="{% static "img\speakers\shikha_pand.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Fl Lt. Shikha Pandey</b></h4> 
+                        <p>In a society where gender equality is steadily 
+                            gaining importance, Fl Lt. Shikha Pandey made the entire nation 
+                            proud with her efforts in a discipline majorly men-centric.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/uj9z59ZmYpc'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee30" data-aos="fade-right">
+                    <img src="{% static "img\speakers\ajit_babu.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Ajit Babu</b></h4> 
+                        <p>Ajit Babu is the CEO of 'Karwahn Concepts'. 
+                            From wanting to do something for earthquake victims, 
+                            to making 'employment for disabled people' his motto, he never 
+                            let Cerebral Palsy come in his way.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/FSv8IQXO8Hs'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee31" data-aos="fade-right">
+                    <img src="{% static "img\speakers\amra_kata.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Amrapali Kata</b></h4> 
+                        <p>Our own Warangal-based district collector, Amrapali Kata, an IAS officer, 
+                            tells you about technology and governance.</p> 
+                    </div>
+                </div>
+                <div class="speaker_card" id="zee32" data-aos="fade-right">
+                    <img src="{% static "img\speakers\nand_muku.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Nandita Mukund</b></h4> 
+                        <p>This Singapore-based contemporary artist tells you why nature 
+                            and art are important disciplines that bind together in her art.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/7J9cQagTQ8s'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee33" data-aos="fade-right">
+                    <img src="{% static "img\speakers\archana_karry.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Archana Karry</b></h4> 
+                        <p>If we don’t expand our domain of interests within our 
+                            lifetime, have we really lived? Archana Karry tells us 
+                            why dance explains the modern world.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/RadiZJQck-w'">Watch it here</button>
+                </div>
+                <div class="speaker_card" id="zee34" data-aos="fade-right">
+                    <img src="{% static "img\speakers\partha_pratim.jpg"%}" class="poster" alt="">
+                    <div class="card_container">
+                        <h4><b>Partha Pratim Talukdar</b></h4> 
+                        <p>What better way to introduce a speaker in a technical 
+                            institute if not with a speaker from this domain.</p> 
+                    </div>
+                    <button class="watch" onclick="location.href='https://youtu.be/D1iuKRhbWVo'">Watch it here</button>
+                </div>
+            </div>
+        </div>
+
+        <!--<div id="sidenav">
             <a href="#info5" id="ed5">2021</a>
             <a href="#info4" id="ed4">2020</a>
             <a href="#info3" id="ed3">2019</a>
@@ -135,524 +562,25 @@
                 <div class="section-title text-center">
                     <h2>EDITION 5.0 (2021)</h2>
                 </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee27">Sonal Devnani</h2>
-                    <img src="{% static "img\speakers\sonal_dev.jpg"%}" class="poster" alt="">
-                    <p class="text">Sonali Devnani is a portrait photographer, a journalist,
-                        an independent filmmaker and most importantly a storyteller, aiming
-                        to bring a change in our society, by capturing and spreading 
-                        stories through her lens.
-                    <p class="text">Sonali's debut documentary, "Addicted Innocence", much like her other 
-                        works, focuses on a social issue: Drug Abuse. It showcases drug abuse 
-                        among children and has won the Best Documentary Award at the Chicago 
-                        South East Asian Film Festival.</p>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee28">Anjum Moudgil</h2>
-                    <img src="{% static "img\speakers\anjum_moud.png"%}" class="poster" alt="">
-                    <p class="text">Anjum Moudgil is a professional sport shooter, 
-                        Olympian, and Arjuna Awardee, having won several medals in 
-                        the World Championship, the South Asian Games and the 
-                        Commonwealth Games. She was also ranked World No. 2 in the 
-                        Women's 10m Air Rifle ISSF rankings in the year 2019. With a 
-                        degree in sports psychology and a passion for abstract painting, 
-                        she is a great inspiration to all of us.</p>
-                    <button class="watch" onclick="location.href='https://www.instagram.com/tv/CTHaVSgnJGO/?hl=en'">Watch it here</button>
-                </div>
             </div>
             <div id="info4">
                 <div class="section-title mt-5 text-center">
                     <h2>EDITION 4.0 (2020)</h2>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee1">Anurag Chauhan</h2>
-                    <img src="{% static "img\speakers\anurag_chau.jpg"%}" class="poster" alt="">
-                    <p class="text">Anurag Chauhan (@anuragchauhanofficial ) is a 
-                        prominent Indian social worker and the founder of the 
-                        non-governmental organization, Humans for Humanity.</p>
-                    <button class="watch" onclick="location.href='https://www.instagram.com/tv/CILTuXcH021/?hl=en'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                <h2 id="zee2">Nawal Mustafa</h2>
-                    <img src="{% static "img\speakers\nawal_mustaf.jpg"%}" class="poster" alt="">
-                    <p class="text">Nawal Mustafa is a doctorial student and a 
-                        researcher in clinical neuropsychology. Fascinated by how 
-                        the biology and psychology of the human brain influences 
-                        one's behaviour, Nawal runs @thebraincoach on Instagram to 
-                        stand up to the stigma around mental health.</p>
-                    <p class="text">On her handle, she provides easy access 
-                        to mental health tips to all those who don't have the 
-                        courage or resources to seek professional help, impacting 
-                        almost 313K lives. She creates insightful therapeutic 
-                        content that resonates with what all of us go through 
-                        frequently.</p>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee3">Kulsum Shadab Wahab</h2>
-                    <img src="{% static "img\speakers\kulsum_shadab.png"%}" class="poster" alt=""> 
-                    <p class="text">Kulsum Shadab Wahab is a renowned philanthropist. 
-                        She’s the founder of Ara Lumiere, an initiative to empower women, 
-                        their status and conditions in all spheres of life. She is also 
-                        the Executive Director of Hothur Foundation.
-
-                    <p class="text">She works to uplift acid attack survivors by introducing them to the 
-                        world of fashion, employing them and giving them a better chance at 
-                        life. She’s involved in multiple charitable ventures and aims to 
-                        create awareness about several socio-political issues.</p>
-                        <button class="watch" onclick="location.href='https://www.instagram.com/tv/CEY4IhNH961/?hl=en'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee4">Partth Thakur</h2>
-                    <img src="{% static "img\speakers\parth_thak.jpg"%}" class="poster" alt=""> 
-                    <p class="text">Partth Thakur is the founder of the non-profit 
-                        organization, 'The Wishing Factory' which aims at fulfilling 
-                        wishes and supporting healthcare of the underprivileged 
-                        Thalassemia Major Patients in India.</p>
-                    <p class="text">Diagnosed with Thalassemia Major right after 
-                        birth, Partth takes blood every 15 days from 3 donors. 
-                        Partth firmly believes that this 'borrowed life' can be 
-                        made meaningful by giving back and putting smiles on faces. 
-                        @thewishingfactory has so far helped fulfill 450+ wishes 
-                        of Thalassemia Major Warriors and supported Healthcare of 
-                        3000+ Warriors.</p>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee5">Digangana Suryavanshi</h2>
-                    <img src="{% static "img\speakers\digang_surya.png"%}" class="poster" alt=""> 
-                    <p class="text">Digangana Suryavanshi is one of the rare talents 
-                        that started acting at the tender age of 7. She started off 
-                        as a child artist in the TV series, 'Kya Haadsa Kya Haqueeqat'. 
-                        After television she decided to venture into films. She's won 
-                        peoples hearts on the silver screen with her bollywood and 
-                        tollywood films. Her fans lovingly call her 'Princess'.</p>
-                    <p class="text">Digangana is an true artist; she paints, writes, sings, composes, 
-                        and plays musical instruments. </p>
-                        <button class="watch" onclick="location.href='https://www.instagram.com/tv/CCqa7zCHimu/?hl=en'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee6">Anubha Maneshwar</h2>
-                    <img src="{% static "img\speakers\anubha_man.jpg"%}" class="poster" alt="">
-                    <p class="text">Anubha Maneshwar is a young entrepreneur- the 
-                        founding director of GirlScript Foundation, which is India's 
-                        biggest tech education organisation. Operating in 56 cities 
-                        across India, her company has impacted nearly 30,000 students 
-                        in just 2.5 years of its inception. The organization has 
-                        received Elastic Search Cause Awards 2019 at Sydney Australia.</p>
-                    <p class="text">She is a speaker at TEDx, PyCon North America, 
-                        WWTech Summit Washington DC and more than 150 other national 
-                        and international events.</p>
-                    <p class="text">She is a recipient of the Indian Women Leadership Excellence 
-                        Award for Education, 35 Under 35 Best Startups Award in 
-                        Education, India's Top 100 Young Leaders Award and Top 8 
-                        across the globe for Technology Playmaker Award by Booking.com 
-                        at London. Recently, she has qualified to the Forbes Asia 30 
-                        Under 30 list for the social entrepreneurship category. We're 
-                        honoured to have her as a part of our TED Circle conference!</p>
                 </div>
             </div>
             <div id="info3">
                 <div class="section-title mt-5 text-center">
                     <h2>EDITION 3.0 (2019)</h2>
                 </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee7">Akriti Khatri</h2>
-                    <img src="{% static "img\speakers\akriti_khat.jpg"%}" class="poster" alt="">
-                    <p class="text">Akriti Khatri is a detective who began the Venus 
-                        Detective Agency, her very own private investigative agency. 
-                        Born and raised in Delhi, Akriti completed a Bachelor’s 
-                        degree in Science and an MBA from Delhi University.</p>
-                    <p class="text">Preferring to call herself an 'information gatherer' rather than an 
-                        investigator, she has had a phenomenal success rate of 85%! 
-                        Branched out agency across several states in India are symbols 
-                        of her success.</p>
-                    <p class="text">She has handled scores of high-level investigation cases. 
-                        With branches in eight cities, and over 80 employees working 
-                        under her full time, she's definitely reached the pinnacle of 
-                        success. And nowadays, she also trains young college students 
-                        in the art of being good detectives.</p>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee8">Anubha Maneshwar</h2>
-                    <img src="{% static "img\speakers\anu_man.jpg"%}" class="poster" alt="">
-                    <p class="text">Anubha Maneshwar is a young entrepreneur and 
-                        the Founder and Director of the Girlscript Foundation, 
-                        India's biggest tech education organisation, operating in 
-                        56 cities across India and has had an impact on nearly 30,000 
-                        students in just two and a half years since its inception. The 
-                        organization has received the Elastic Search Cause Awards 2019 
-                        at Sydney, Australia. She has been a speaker at Tedx, PyCon 
-                        North America, WWTech Summit Washington DC as well as at more 
-                        than 150 other national and international events. </p>
-                    <p class="text">She is a recipient of the Indian Women Leadership Excellence Award 
-                        for Education, 35 Under 35 Best Startup in Education, India's 
-                        Top 100 Young Leaders Award and Top 8 across the globe for Technology 
-                        Playmaker Award by Booking.com at London UK. Recently, she has also
-                        qualified for the semi finals of Forbes Asia 30 Under 30 and is 
-                        hoping to make the final cut in March 2020 in the social 
-                        entrepreneurship category.</p>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee9">Dr.Srinivasan Sundarrajan</h2>
-                    <img src="{% static "img\speakers\srinivas.jpg"%}" class="poster" alt="">
-                    <p class="text">Dr.Srinivasan Sundarrajan is a reputed Aerospace and 
-                        Missile Scientist who has worked through all the phases of missile 
-                        design, production and development. He has worked on prestigious 
-                        missile systems like the Brahmos, Agni, Prithvi, Akash, Nag and 
-                        Thrishul of the Defence Research and Development Organisation. An 
-                        AICTE Distinguished Professor, Dr.Sundarrajan has made significant 
-                        contribution to curriculum development, integrating emerging areas 
-                        of technology in it. He serves as a member on the boards of ISRO, 
-                        DAE and CSIR. He has as edited two engineering handbooks and published 
-                        more than eighty technical papers.</p>
-                    <p class="text">He joined as the Director of NIT Tiruchirapalli and has played a 
-                        vital role in transforming the institute. Currently Dr. Sundarrajan 
-                        works as a Higher Education and Defence Aerospace consultant and provides 
-                        strategic consultancy to industries in the areas of defence, aerospace 
-                        and hi-tech products.</p>
-                    <button class="watch" onclick="location.href='https://youtu.be/jj_4Yb8ZRO8'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee10">Pavan Rao</h2>
-                    <img src="{% static "img\speakers\pavan_rao.jpg"%}" class="poster" alt="">
-                    <p class="text">Pavan Rao's podium clinch at Peter England’s Mr. India 2017 
-                        is simply one among the endless accolades he has received through the years. 
-                        The Fictitious Group, a dance troupe of which he was a part, was 
-                        awarded the title of “India’s Got Talent Season 3”, after memorable 
-                        wins in dance shows “Boogie Woogie” and “Entertainment Ke liye Kuch 
-                        Bhi Karega”. His talent has also received international recognition 
-                        along with his dance crew, "The Kings", who were announced World Champions 
-                        at the NBC World of Dance.</p>
-                    <p class="text">Furthermore, he has also starred in ABCD2. The super hit dance movie 
-                        is based on the hardships faced by his dance crew in securing funding 
-                        and eventually, winning the World Hip Hop Championship.</p>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee11">Chitra Vishwanath</h2>
-                    <img src="{% static "img\speakers\chitra.jpg"%}" class="poster" alt="">
-                    <p class="text">Chitra Vishwanath, an architect based in Bangalore is the 
-                        principal architect at Biome Environmental Solutions. She studied 
-                        for a diploma in civil engineering from Nigeria and a Bachelor of 
-                        Architecture degree from the CEPT University in Ahmedabad. She has 
-                        been running her own architectural firm since 1991, working with other 
-                        architects on many projects in India and Africa.</p>
-                    <p class="text">Biome is making major strides in ecological architecture especially 
-                        in urban settings. In a world where conventional architecture and 
-                        construction practices do much harm to the environment, firms like 
-                        Biome strive to bring in a holistic ecosystem-based approach. Biome 
-                        has been involved in more than 700 projects of various scales and 
-                        contexts encompassing ecological construction, water harvesting and 
-                        sanitation structures with specific relevance to the ecology of the sites.</p>
-                    <button class="watch" onclick="location.href='https://youtu.be/41tlOqU-6PM'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee12">Seema Tomar</h2>
-                    <img src="{% static "img\speakers\seema.jpg"%}" class="poster" alt="">
-                    <p class="text">If breaking stereotypes were a target, Seema Tomar seems 
-                        to be hitting the bullseye. Hailing from Johri, a village in Uttar 
-                        Pradesh, Seema was expected to marry and become a housewife. However, 
-                        as fate would have it, her aptitude for shooting, passed down to her 
-                        by her mother, Prakashi Tomar, famously known as 'Revolver Dadi', an 
-                        award-winning shooter herself, began to bloom. She started accompanying 
-                        her mother and aunt to the shooting range and there was no looking back.</p>
-                    <p class="text">Aged 37, she is the only Indian woman to win the Silver Medal for the shotgun 
-                        event, at the 'International Shooting Sports Federation'. She has gone 
-                        forth to secure 6 gold medals and 2 silver medals in various editions of 
-                        the National Shooting Championship's Trap events. She has also acquired 2 
-                        bronze medals in the Asian Clay Shooting Championship's as well as 
-                        participated in the Commonwealth Games.</p>
-                    <button class="watch" onclick="location.href='https://youtu.be/X3TzC-_Nnec'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee13">Saptarshi Prakash</h2>
-                    <img src="{% static "img\speakers\prakash.jpg"%}" class="poster" alt="">
-                    <p class="text">The word "problem" means something different for different people. 
-                        To one who thoroughly enjoys programming, it's the quest for the right code, 
-                        to any student, it's the thought of the next day's exam. But something such 
-                        as building a complex UX flow isn't something most people ponder upon. 
-                        "Design is intelligence made visible," and our next speaker is one of the 
-                        very best!</p>
-                    <p class="text">A graduate of IIT Madras, Saptarshi Prakash has worked with some incredibly 
-                        well-known startups of India like Housing.com and Zeta India and has been 
-                        a part of crafting consumer experiences for both these products. He is 
-                        currently a Product Design Manager at Swiggy, India’s largest food ordering 
-                        and delivery platform. He has also given over fifty UX talks and has held 
-                        workshops at various universities and companies and has written multiple 
-                        articles on designing.</p>
-                    <button class="watch" onclick="location.href='https://youtu.be/kEN75SlNuWc'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee14">Sudip Ghose</h2>
-                    <img src="{% static "img\speakers\sudip.jpg"%}" class="poster" alt="">
-                    <p class="text">Often times, our minds begin to get saturated with thoughts of 
-                        upcoming exams, placements, and other responsibilities. The one thing we're 
-                        all always told is to think calmly and the answer will come to us. However 
-                        it's always easy for one to say, and extremely difficult to implement. Sudip Ghose
-                            is not only known to have mastered the technique of stress-free 
-                        functioning but has applied it in his life to reach corporate heights only a 
-                        few have been able to achieve.</p>
-                    <p class="text">Touted as a dynamo by colleagues and employees alike, Sudip Ghose is a man 
-                        of relentless energy and always has a positive approach towards his work. 
-                        With over two decades worth of experience, fourteen of which have been spent 
-                        in positions of leadership, he is known for his "never say die" attitude. 
-                        He is currently the Managing Director of VIP Industries Limited and has 
-                        worked with Samsonite South Asia, Onida, Whirlpool India, Reliance and Bausch 
-                        and Lomb.</p>
-                    <button class="watch" onclick="location.href='https://youtu.be/QoGz3djHPv0'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee15">Ambika Hiranandani</h2>
-                    <img src="{% static "img\speakers\ambika.png"%}" class="poster" alt="">
-                    <p class="text">Ambika Hiranandani is an environmental and animal rights 
-                        activist and a lawyer. She is a member of the Maharashtra State Animal 
-                        Welfare Board and a member of the Society for Prevention of Cruelty to 
-                        Animals, Mumbai. She has been actively involved in the movement for over 
-                        ten years. She has written several articles on the inhumane and unregulated 
-                        practices against animals in India and has continued to remain instrumental 
-                        in the fight against animal cruelty.</p>
-                    <p class="text">She is currently the government and legal specialist for The Good Food Institute, 
-                        India. She supports the GFI in its efforts to build thought leadership 
-                        in the plant-based and cell-based meat, eggs and dairy sector.</p>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee16">Dr. Shannon Olsson</h2>
-                    <img src="{% static "img\speakers\shannon.jpg"%}" class="poster" alt="">
-                    <p class="text">Dr. Shannon Olsson is a chemical ecologist who is passionate about 
-                        understanding the communication between organisms within India's diverse 
-                        ecosystems. In turn, she is dedicated to bringing people together across 
-                        various sectors of society to better appreciate, sustain, and listen to our 
-                        natural world. She is currently the Director of the EChO Network, a  social 
-                        innovation partnership steered by the Principal Scientific Adviser to the 
-                        Government of India.</p>
-                    <p class="text">A Fulbright Scholar, Ramanujan and INK Fellow, Shannon’s research has been 
-                        featured by TEDx, Syntalk, Sci-Illustrate, Dublin Science Gallery, V&A 
-                        London, Chemical and Engineering News, and the DST Science Express train.</p>
-                </div>
             </div>
             <div id="info2">
                 <div class="section-title mt-5 text-center">
                     <h2>EDITION 2.0 (2018)</h2>
                 </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee17">Manish Mehrotra</h2>
-                    <img src="{% static "img\speakers\manish_meh.jpg"%}" class="poster" alt="">
-                    <p class="text">Chef Manish Mehrotra is widely recognised as the 
-                        most exciting modern Indian chef in the world. He has managed 
-                        to leave an imprint in the culinary universe with his innovative, 
-                        artistic and scientific experiments on flavours. He was inspired 
-                        to travel across Asia to train in Pan-Asian cuisine, which resulted 
-                        in his brainchild, the Indian Accent. 
-                    </p>
-                    <p class="text">Among various achievements, Indian Accent is the 
-                        only Indian restaurant in the list of World's 50 Best for 
-                        the past three years in a row. He has won the Vir Sanghvi 
-                        Award, Best Chef of 2010 & 2012, American Express Best Chef 
-                        of the Year, to name a few. </p>
-                    <button class="watch" onclick="location.href='https://youtu.be/G_M54S6MthU'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee18">Nag Ashwin</h2>
-                    <img src="{% static "img\speakers\nag_ashwin.jpg"%}" class="poster" alt="">
-                    <p class="text">A unique filmmaking talent to grace the Telugu film 
-                        industry in recent times, Nag Ashwin, stands out from the typical 
-                        cinema. His directorial debut, Yevvade Subramanyam, was well received 
-                        due to it's relatable story line. Mahanati - a biopic of Savitri, is 
-                        his recent hit. It caused waves of sentiment and controversy in it's wake. 
-                    </p>
-                    <p class="text">Ashwin staunchly believes that in today's world, we all fight 
-                        the fire, we solve a problem, simply because it exists and the same one 
-                        might pop up again. According to him, dealing with the real cause of the 
-                        fire is the solution. He is an exceptional mind with the talent to portray 
-                        real emotions and stories, which establish a connect with the audience 
-                        while simultaneously communicating thought provoking ideas. </p>
-                    <button class="watch" onclick="location.href='https://youtu.be/GKZrs0aJRnE'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee19">Flavia Agnes</h2>
-                    <img src="{% static "img\speakers\flavia_agnes.jpg"%}" class="poster" alt="">
-                    <p class="text">Flavia Agnes is a noted gender rights lawyer and director of 
-                        Majlis, a Mumbai-based organisation that provides legal initiatives for 
-                        women. A strong supporter of legal pluralism and the premise of ‘reforms 
-                        from within’, she has played an important role in reforming Christian Personal 
-                        Laws as well as advancing the rights of Muslim women. 
-                    </p>
-                    <p class="text">Having been in an abusive marriage herself, she is of the opinion 
-                        that Indian courts are poorly designed to accommodate victims of sexual 
-                        violence, often being insensitive to the woman’s vulnerability and state 
-                        of mind. She believes justice should be made not only more accessible but 
-                        also viable to everyone, especially those who are apprehensive about 
-                        approaching the court system. </p>
-                    <button class="watch" onclick="location.href='https://youtu.be/IMJ5jkb2nE4'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee20">Mani Vajipeyajula</h2>
-                    <img src="{% static "img\speakers\mani_vaji.jpg"%}" class="poster" alt="">
-                    <p class="text">During his travels across India, Mani Vajipeyajula was deeply 
-                        disturbed by the filth and squalor. This motivated him to build an organization 
-                        that would solve India's waste management challenges through technology and 
-                        business innovations. 
-                    </p>
-                    <p class="text">He is the Co-Founder and CEO of Banyan Nation, a technology 
-                        driven recycling company that is changing the way India looks at plastics, 
-                        recycling and waste management. Banyan Nation is a proud producer of Better 
-                        Plastic from disposed plastic, and the recipient of The Circulars 2018 
-                        People's Choice Award.</p>
-                    <button class="watch" onclick="location.href='https://youtu.be/UFGvQsEShq4'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee21">Jay Krishnan</h2>
-                    <img src="{% static "img\speakers\jay_krish.jpg"%}" class="poster" alt="">
-                    <p class="text">Jay Krishnan, former Chief Executive Officer of T-Hub - India’s 
-                        largest startup incubator, and now Partner to SRI Capital, is a serial 
-                        entrepreneur who had sailed through successes, acquisitions and failures 
-                        in the startup world.  
-                    </p>
-                    <p class="text">He believes the current surge in startup culture in India is 
-                        much needed, as it is an indication of increased willingness to take 
-                        risks and greater innovation among the youth. He actively encourages 
-                        entrepreneurs to keep failing and move forward irrespective of outcomes. 
-                        With a keen interest in emerging technologies, he sees potential in the 
-                        automation industry to open new doors of entrepreneurship and job creation 
-                        in our country.</p>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee22">Dr. Vipul Rastogi</h2>
-                    <img src="{% static "img\speakers\vipul_ras.jpg"%}" class="poster" alt="">
-                    <p class="text">Dr. Vipul Rastogi has joined Medanta as a Associate Consultant 
-                        in Behavioural Neurology and Psychiatry. Being one of the very few 
-                        psychiatrists in India who has had formal training in Neurology, he is 
-                        sought after for his special expertise in providing holistic treatment 
-                        of Psychiatric Disorders and alongside medications for his patients. Keen 
-                        on combining technology and neuroscience with mental health, he believes 
-                        that Artificial Intelligence is a potential tool in neuropsychology for the 
-                        treatment of depression, OCD, Schizophrenia, and other mental ailments.  
-                    </p>
-                    <button class="watch" onclick="location.href='https://youtu.be/_XsFgz7so9E'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee23">Manan Gupta</h2>
-                    <img src="{% static "img\speakers\manan_gup.jpg"%}" class="poster" alt="">
-                    <p class="text">From a very young age, Manan Gupta was fascinated by the 
-                        intricacies of music. He had the special ability to play the chords of 
-                        any symphony, just by listening. His unique style of playing the guitar, 
-                        called the fingerstyle, inspired by Andy McKee's Drifting, is definitely 
-                        a treat for the ears.  
-                    </p>
-                    <p class="text">Manan Gupta has performed at many national and 
-                        international shows such as The NAMM Show - Los Angeles, Zihuatanejo 
-                        International Guitar Festival - Mexico, Bacardi NH7 Weekender- Pune, 
-                        to name a few. Recently, he has been signed to a US-based record label 
-                        'Fretmonkey Records'. His latest album Mix Mood features a plethora of 
-                        emotions packaged into one, with profound thoughts behind every lyric. 
-                        He is a young lost soul, trying to leave a mark in this world, with his 
-                        music. </p>
-                    <button class="watch" onclick="location.href='https://youtu.be/HMnyKalFmk4'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee24">Himanshu Rath</h2>
-                    <img src="{% static "img\speakers\himanshu_rath.jpg"%}" class="poster" alt="">
-                    <p class="text">With an aim to provide a life of dignity to the elderly, 
-                        Himanshu Rath set up the Agewell Foundation in 1999, to support and 
-                        empower older persons who have been ill-treated or abandoned by their 
-                        families, provide a friendly and welcoming environment for them, change 
-                        the social perception about them and enable them to regain their self-confidence. 
-                        Agewell is now spread across 640 districts in India connecting with over a 
-                        million senior citizens with the help of more than 80,000 volunteers.   
-                    </p>
-                    <p class="text">The United Nations Economic and Social Council (ECOSOC) has 
-                        recognized the efforts of Agewell foundation and granted them the 
-                        Special Consultative Status.</p>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee25">Manvendra Singh Gohil</h2>
-                    <img src="{% static "img\speakers\singh_gohil.jpg"%}" class="poster" alt="">
-                    <p class="text">When Manvendra Singh Gohil, the first openly gay prince of India, 
-                        came out to his family more than a decade ago, it resulted in his mother 
-                        taking out a newspaper advertisement disowning him. 
-                    </p>
-                    <p class="text">Gohil set up the Lakshya Trust, a charity for LGBT people in 
-                        his conservative home state, made an appearance on the Oprah Winfrey Show, 
-                        and has been using his high status to help the LGBT community. He has now 
-                        thrown open his palace doors to vulnerable Indians who’ve been shunned by 
-                        their families for their sexuality, and is providing them support, training 
-                        to find jobs, and a home to call their own.</p>
-                    <button class="watch" onclick="location.href='https://youtu.be/Vn5BGK4rQ7E'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee26">Dr. Tiny Nair</h2>
-                    <img src="{% static "img\speakers\tiny_nair.jpg"%}" class="poster" alt="">
-                    <p class="text">Dr. Tiny Nair is an experienced Cardiologist in Trivandrum, 
-                        who has been working with the PRS Hospital since January 1990. Not only 
-                        is he immensely accomplished in his field, but he  also has a flair for 
-                        storytelling. With 51k followers, he is also big on Quora, having been 
-                        voted Top Writer 2018.
-                    </p>
-                    <p class="text">His book 'Happy At Heart' is a treasure trove of interesting 
-                        anecdotes and life lessons from his medical career, with each story 
-                        conveying an underlying message, infused with humour, and a touch of 
-                        heart.</p>
-                    <button class="watch" onclick="location.href='https://youtu.be/4doHokOFStM'">Watch it here</button>
-                </div>
             </div>
             <div id="info1">
                 <div class="section-title mt-5 text-center">
                     <h2>EDITION 1.0 (2017)</h2>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee27">Mr. Sandeep Reddy Vanga</h2>
-                    <img src="{% static "img\speakers\sandeep_vanga.jpg"%}" class="poster" alt="">
-                    <p class="text">The next man we're presenting needs next to no 
-                        introduction in this part of the world. With his debut direction for 
-                        Arjun Reddy, a film so bold, it shook the censorship board before it 
-                        finally got approval. We present to you, one last speaker. Mr. Sandeep 
-                        Reddy Vanga; a man that innocuously breaks the mould to perfection.</p>
-                        <button class="watch" onclick="location.href='https://youtu.be/sccHlNsyv-Y'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee28">Pratap Sriram Sundar</h2>
-                    <img src="{% static "img\speakers\pratap_sundar.jpg"%}" class="poster" alt="">
-                    <p class="text">Just when you thought we were done, we are here to show 
-                        you that we aren’t. TEDxNITW presents Pratap Sriram Sundar, a man 
-                        who has immense experience in areas of technology and management. 
-                        He is filled with ideas that truly break the mould.</p>
-                    <button class="watch" onclick="location.href='https://youtu.be/ETykzhrEZu0'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee29">Fl Lt. Shikha Pandey</h2>
-                    <img src="{% static "img\speakers\shikha_pand.jpg"%}" class="poster" alt="">
-                    <p class="text">In a society where gender equality is steadily 
-                        gaining importance, Fl Lt. Shikha Pandey made the entire nation 
-                        proud with her efforts in a discipline majorly men-centric.</p>
-                    <button class="watch" onclick="location.href='https://youtu.be/uj9z59ZmYpc'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee30">Ajit Babu</h2>
-                    <img src="{% static "img\speakers\ajit_babu.jpg"%}" class="poster" alt="">
-                    <p class="text">Ajit Babu is the CEO of 'Karwahn Concepts'. 
-                        From wanting to do something for earthquake victims, 
-                        to making 'employment for disabled people' his motto, he never 
-                        let Cerebral Palsy come in his way.</p>
-                    <button class="watch" onclick="location.href='https://youtu.be/FSv8IQXO8Hs'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee31">Amrapali Kata</h2>
-                    <img src="{% static "img\speakers\amra_kata.jpg"%}" class="poster" alt="">
-                    <p class="text">Our own Warangal-based district collector, an IAS officer, 
-                        tells you about technology and governance.</p>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee32">Nandita Mukund</h2>
-                    <img src="{% static "img\speakers\nand_muku.jpg"%}" class="poster" alt="">
-                    <p class="text">This Singapore-based contemporary artist tells you why nature 
-                        and art are important disciplines that bind together in her art.</p>
-                    <button class="watch" onclick="location.href='https://youtu.be/7J9cQagTQ8s'">Watch it here</button>
-                </div>
-                <div class="event" data-aos="fade-right">
-                    <h2 id="zee33">Archana Karry</h2>
-                    <img src="{% static "img\speakers\archana_karry.jpg"%}" class="poster" alt="">
-                    <p class="text">If we don’t expand our domain of interests within our 
-                        lifetime, have we really lived? Archana Karry tells us 
-                        why dance explains the modern world. </p>
-                    <button class="watch" onclick="location.href='https://youtu.be/RadiZJQck-w'">Watch it here</button>
                 </div>
                 <div class="event" data-aos="fade-right">
                     <h2 id="zee34">Partha Pratim Talukdar</h2>
@@ -663,7 +591,7 @@
                 </div>
             </div>
         </div>       
-
+    -->
         <footer id="footer" style="background: black;">
         <div class="footer-top" style="background: black;">
             <div class="container">
@@ -698,16 +626,13 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <h3>Our Newsletter:</h3>
                         <form action="/updateDataApi" method="post" class="email-form" >
                          {% csrf_token %}
                             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            
                             <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                             <input type="submit" value="Subscribe">
                         </form>
-
                     </div>
 
                 </div>
@@ -730,10 +655,9 @@
 
         <!-- JS Files -->
     <script src="{% static "vendor/jquery/jquery.min.js"%}"></script>
-    <script src="{% static "http://code.jquery.com/jquery-migrate-1.2.1.min.js"%}"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js"%}"></script>
     <script src="{% static "vendor/jquery.easing/jquery.easing.min.js"%}"></script>
-    <script src="{% static "vendor/php-email-form/validate.js"%}"></script>
     <script src="{% static "vendor/owl.carousel/owl.carousel.min.js"%}"></script>
     <script src="{% static "vendor/isotope-layout/isotope.pkgd.min.js"%}"></script>
     <script src="{% static "vendor/venobox/venobox.min.js"%}"></script>
@@ -742,7 +666,6 @@
 
     <!-- Template Main JS File -->
     <script src="{% static "js/main.js"%}"></script>
-     <script src="{% static "js/search.js"%}"></script>
 </body>
 
 </html>
