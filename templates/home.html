@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href = "{% static 'vendor/bootstrap/css/bootstrap.min.css' %}"  rel="stylesheet">
+    <link href = "{% static "vendor/bootstrap/css/bootstrap.min.css" %}"  rel="stylesheet">
     <link href="{% static "vendor/icofont/icofont.min.css" %}" rel="stylesheet">
     <link href="{% static "vendor/boxicons/css/boxicons.min.css" %}" rel="stylesheet">
     <link href="{% static "vendor/animate.css/animate.min.css"%}" rel="stylesheet">
@@ -32,10 +32,29 @@
 </head>
 
 <body>
+    <!-- ======= Top Bar ======= -->
+      <div id="topbar" class="d-flex align-items-center fixed-top">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+
+          <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
+            <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
+          </div>
+
+          <div class="languages d-none d-md-flex align-items-center">
+            <ul>
+                <li><a href="https://twitter.com/tedxnitw" class="twitter"><i class="bx bxl-twitter"> </i></a></li>
+                <li><a href="https://www.facebook.com/TEDxNITW" class="facebook"><i class="bx bxl-facebook"> </i></a></li>
+                <li><a href="https://www.instagram.com/tedxnitw/?hl=en" class="instagram"><i class="bx bxl-instagram"> </i></a></li>
+                <li><a href="https://www.linkedin.com/company/tedxnitw/" class="linkedin"><i class="bx bxl-linkedin"> </i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-        <div class="container d-flex align-items-center">
+    <header id="header" class="fixed-top d-flex align-items-cente">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
             <a href="" class="logo mr-auto"><img src="{% static "img/logo.png"%}" alt="" class="img-fluid"></a>
 
@@ -658,12 +677,12 @@
                                 <strong>Phone:</strong> +91 9381402059<br>
                                 <strong>Email:</strong> events@tedxnitw.com<br>
                             </p>
-                            <div class="social-links mt-3">
+                            <!-- <div class="social-links mt-3">
                                 <a href="https://twitter.com/tedxnitw" class="twitter"><i class="bx bxl-twitter"></i></a>
                                 <a href="https://www.facebook.com/TEDxNITW" class="facebook"><i class="bx bxl-facebook"></i></a>
                                 <a href="https://www.instagram.com/tedxnitw/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
                                 <a href="https://www.linkedin.com/company/tedxnitw/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -679,13 +698,13 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h3>Our Newsletter:</h3>
-                        <form action="/updateDataApi" method="post" class="email-form" >
-                         {% csrf_token %}
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                            <input type="submit" value="Subscribe">
-                        </form>
+                        <h3> Follow us on </h3>
+                        <ul style="list-style-type: none; font-size: 20px; text-align: left">
+                            <li><a href="https://twitter.com/tedxnitw" class="twitter"><i class="bx bxl-twitter"> TWITTER</i></a></li>
+                            <li><a href="https://www.facebook.com/TEDxNITW" class="facebook"><i class="bx bxl-facebook"> FACEBOOK</i></a></li>
+                            <li><a href="https://www.instagram.com/tedxnitw/?hl=en" class="instagram"><i class="bx bxl-instagram"> INSTAGRAM</i></a></li>
+                            <li><a href="https://www.linkedin.com/company/tedxnitw/" class="linkedin"><i class="bx bxl-linkedin"> LINKED-IN</i></a></li>
+                        </ul>
                     </div>
 
                 </div>
